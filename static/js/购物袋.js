@@ -21,17 +21,17 @@ $(function(){
 					var ul = $("<ul class='ul'></ul>");
 					var list_content_first = $("<li class='list_content_first'></li>");
 					var list_img = $("<p class='list_img'></p>");
-					var list_img_a = $("<a href='商品详情.html'></a>");
+					var list_img_a = $("<a href='goods.html'></a>");
 					var a_img = $("<img src=" + obj.index1 + " title=" + obj.title + " id=" + obj.id + " class='_img'/>");
 					a_img.appendTo(list_img_a);
 					list_img_a.appendTo(list_img);
 					var list_news = $("<p class='list_news'></p>");
 					var brand = $("<span class='brand'></span>");
-					var brand_a = $("<a href='二级页面.html'>" + obj.name + "</a>");
+					var brand_a = $("<a href='index2.html'>" + obj.name + "</a>");
 					brand_a.appendTo(brand);
 					brand.appendTo(list_news);
 					var goods = $("<span class='goods'></span>");
-					var goods_a = $("<a href='商品详情.html'>" + obj.title + "</a>");
+					var goods_a = $("<a href='goods.html'>" + obj.title + "</a>");
 					goods_a.appendTo(goods);
 					var span = $("<span>尺寸：OS</span>");
 					list_news.append(brand,goods,span);
@@ -116,7 +116,7 @@ $(function(){
 			
 	})
 	$(".btn2").on("click",function(){
-		window.open("魅力惠.html");
+		window.open("index.html");
 	})
 	$(".btn3").on("click",function(){
 		alert("结算成功，欢迎下次光临");

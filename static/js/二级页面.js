@@ -101,7 +101,7 @@ $(function(){
 			users.push(user);
 			$.cookie("products",JSON.stringify(users),{expires:100,path:"/"});
 			evt.preventDefault();
-			window.open("商品详情.html");
+			window.open("goods.html");
 		})
 		
 	})

@@ -1,44 +1,50 @@
+{% load static %}
+
 <!DOCTYPE html>
+
 <html>
 	<head>
+
 		<meta charset="utf-8" />
 		<title>魅力惠时尚奢侈品牌闪购网站 奢侈品排行榜销售NO.1 2000多个国际品牌官方合作伙伴-魅力惠官方网站</title>
-		<link rel="icon" href="img/love.png" type="image/x-icon">
-		<link rel="stylesheet" href="css/魅力惠首页.css" />
-		<link rel="stylesheet" href="css/header-footer.css" />
-		<script type="text/javascript" src="js/jquery-1.12.3.js" ></script>
-		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
-		<script type="text/javascript" src="js/魅力惠.js" ></script>
-		<script type="text/javascript" src="js/header-footer.js" ></script>
+		<link rel="icon" href="{% static 'img/love.png' %}" type="image/x-icon">
+		<link rel="stylesheet" href="{% static 'css/魅力惠首页.css' %}"/>
+		<link rel="stylesheet" href="{% static 'css/header-footer.css' %}"/>
+		<script type="text/javascript" src="{% static 'js/jquery-1.12.3.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/jquery.cookie.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/魅力惠.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/header-footer.js' %}"></script>
+
 	</head>
 	<body>
+
 		<div class="login">
 			<div class="header">
 				<ul class="header_left">
-					<li><img src="img/zhuceyouli.gif"/><a href="注册页面.html" target="_blank">注册有礼</a></li>
+					<li><img src="{% static 'img/zhuceyouli.gif' %}"><a href="{% url 'App:register' %}" target="_blank">注册有礼</a></li>
 					<li>|</li>
-					<li><a href="登录页面.html" target="_blank">登录</a></li>
+					<li><a href="{% url 'App:login' %}" target="_blank">登录</a></li>
 					<li>|</li>
-					<li><a href="登录页面.html" target="_blank">收藏</a></li>
+					<li><a href="{% url 'App:login' %}" target="_blank">收藏</a></li>
 				</ul>
 				<ul class="header_right">
-					<li><a href="#" >在线咨询</a></li>
+					<li><a href="#">在线咨询</a></li>
 					<li>|</li>
 					<li style="position: relative;">
-						<a href="http://www.mei.com/mobile" >手机版</a>
+						<a href="http://www.mei.com/mobile">手机版</a>
 						<div class="download">
-							<img src="img/side_middle1.png" />
+							<img src="{% static 'img/side_middle1.png' %}">
 							<p>扫码下载APP</p>
 						</div>
 					</li>
 					<li>|</li>
-					<li><a href="http://weibo.com/glamoursaleschina?spm=a2o1p.8183483.0.0.fQlt7u" ></a></li>
+					<li><a href="http://weibo.com/glamoursaleschina?spm=a2o1p.8183483.0.0.fQlt7u"></a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="logo">
-			<a href="魅力惠.html"></a>
-			<a href="魅力惠.html"></a>
+			<a href="index.html"></a>
+			<a href="index.html"></a>
 		</div>
 		<div class="nav">
 			<div class="list">
@@ -57,7 +63,7 @@
 									<li><a href="#">上海时装周 JANE EYRE专场（满减）</a></li>
 									<li><a href="#">LACOSTE 女鞋</a></li>
 									<li><a href="#">RUCOLINE 意式休闲时尚女鞋</a></li>
-									<li><a href="#">MO&Co. 90S极简时髦女装</a></li>
+									<li><a href="#">MO&amp;Co. 90S极简时髦女装</a></li>
 								</ul>
 								<p><a href="#" class="look">查看所有活动</a></p>
 							</div>
@@ -68,7 +74,7 @@
 									<li><a href="#">服装</a></li>
 									<li><a href="#">鞋履</a></li>
 									<li><a href="#">包袋</a></li>
-									<li><a href="#">手表&首饰</a></li>
+									<li><a href="#">手表&amp;首饰</a></li>
 									<li><a href="#">眼镜</a></li>
 								</ul>
 							</div>
@@ -83,11 +89,11 @@
 									<li><a href="#">LACOSTE 男鞋</a></li>
 									<li><a href="#">奢华男士 多品牌鞋履配饰</a></li>
 									<li><a href="#">INITIAL  轻剪裁男装及配饰</a></li>
-									<li><a href="#">VIKTOR & ROLF 剑走偏锋的时尚艺术男士</a></li>
+									<li><a href="#">VIKTOR &amp; ROLF 剑走偏锋的时尚艺术男士</a></li>
 									<li><a href="#">COSTUME N COSTUME 简洁精致男士</a></li>
 									<li><a href="#">SKECHERS 男鞋</a></li>
 									<li><a href="#">LOTTUSSE 匠心工艺 典藏男士鞋包</a></li>
-									<li><a href="#">PAUL& SHARK  闲适优雅 格调男装</a></li>
+									<li><a href="#">PAUL&amp; SHARK  闲适优雅 格调男装</a></li>
 								</ul>
 								<p><a href="#" class="look">查看所有活动</a></p>
 							</div>
@@ -140,10 +146,10 @@
 								<h4>热门活动</h4>
 								<ul>
 									<li><a href="#">职场温馨小物件 专场</a></li>
-									<li><a href="#">DOWNIA 澳洲家居&地毯(满减)</a></li>
+									<li><a href="#">DOWNIA 澳洲家居&amp;地毯(满减)</a></li>
 									<li><a href="#">中秋佳节 床品特辑</a></li>
 									<li><a href="#">利快 创意家居</a></li>
-									<li><a href="#">LAYTEX & TOM KATE 泰国乳胶枕</a></li>
+									<li><a href="#">LAYTEX &amp; TOM KATE 泰国乳胶枕</a></li>
 									<li><a href="#">德式 厨房</a></li>
 									<li><a href="#">热卖 小家电</a></li>
 									<li><a href="#">THERMOS 膳魔师专场</a></li>
@@ -158,7 +164,7 @@
 									<li><a href="#">卫浴</a></li>
 									<li><a href="#">家电</a></li>
 									<li><a href="#">床品</a></li>
-									<li><a href="#">办公&礼品</a></li>
+									<li><a href="#">办公&amp;礼品</a></li>
 								</ul>
 							</div>
 						</div>
@@ -215,9 +221,9 @@
 					<li><a href="#">即将推出</a></li>
 				</ul>
 				<ul class="list_right">
-					<li><a href="购物袋.html" target="_blank" class="sum">0</a></li>
+					<li><a href="cart.html" target="_blank" class="sum">0</a></li>
 					<li>|</li>
-					<li><a href="购物袋.html" target="_blank">￥0.00</a></li>
+					<li><a href="cart.html" target="_blank">￥0.00</a></li>
 					<div class="shopping">
 						<div class="no_shopping">
 							购物袋暂无商品
@@ -230,14 +236,14 @@
 		<a href="#"><div class="bigphoto"></div></a>
 		<div class="content_out">
 			<div class="content">
-				<a href="#"><img src="img/1.jpg" class="num1"/></a> 
+				<a href="#"><img src="{% static 'img/1.jpg' %}" class="num1"></a>
 				<div class="content_in">
 					<h3>[&nbsp;&nbsp;今日上新&nbsp;&nbsp;]</h3>
 					<div class="goods_list">
 						<div class="goods">
-							<a href="二级页面.html" target="_blank">
+							<a href="index2.html" target="_blank">
 								<div class="goods_photo">
-									<img src="img/goods1.jpg" />
+									<img src="{% static 'img/goods1.jpg' %}">
 									<div class="blackbox">
 										2天后活动结束
 									</div>
@@ -248,7 +254,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods2.jpg" />
+									<img src="{% static 'img/goods2.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -259,20 +265,22 @@
 						<div class="goods_big">
 							<div class="goods_lun">
 								<a href="#">
-									<img src="img/goods_big1.jpg" />
+									<img src="{% static 'img/goods_big1.jpg' %}">
 								</a>
 								<a href="#">
-									<img src="img/goods_big2.jpg" />
+									<img src="{% static 'img/goods_big2.jpg' %}">
 								</a>
-							</div>
+							<a href="#">
+									<img src="{% static 'img/goods_big1.jpg' %}">
+								</a></div>
 						</div>
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods3.jpg" />
+									<img src="{% static 'img/goods3.jpg' %}">
 									<div class="blackbox">
 										购满699元，减100元
-										<br />
+										<br>
 										7天后活动结束
 									</div>
 								</div>
@@ -282,10 +290,10 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods4.jpg" />
+									<img src="{% static 'img/goods4.jpg' %}">
 									<div class="blackbox">
 										购满299元，减100元
-										<br />
+										<br>
 										7天后活动结束
 									</div>
 								</div>
@@ -295,7 +303,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods5.jpg" />
+									<img src="{% static 'img/goods5.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -306,7 +314,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods6.jpg" />
+									<img src="{% static 'img/goods6.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -317,7 +325,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods7.jpg" />
+									<img src="{% static 'img/goods7.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -328,7 +336,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods8.jpg" />
+									<img src="{% static 'img/goods8.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -339,7 +347,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods9.jpg" />
+									<img src="{% static 'img/goods9.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -355,7 +363,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods2_1.jpg" />
+									<img src="{% static 'img/goods2_1.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -366,46 +374,46 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods2_2.jpg" />
+									<img src="{% static 'img/goods2_2.jpg' %}">
 									<div class="blackbox">
 										购满699元，减50元；满1299元，减100元
-										<br />
+										<br>
 										3天后活动结束
 									</div>
 								</div>
-								<p>MO&Co. 90S极简时髦女装<span class="sale"><span>1.7</span>折起</span></p>
+								<p>MO&amp;Co. 90S极简时髦女装<span class="sale"><span>1.7</span>折起</span></p>
 							</a>
 						</div>
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods2_3.jpg" />
+									<img src="{% static 'img/goods2_3.jpg' %}">
 									<div class="blackbox">
 										购满699元，减50元；满1299元，减100元
-										<br />
+										<br>
 										3天后活动结束
 									</div>
 								</div>
-								<p>MO&CO. 玩趣街头时髦女装<span class="sale"><span>2.2</span>折起</span></p>
+								<p>MO&amp;CO. 玩趣街头时髦女装<span class="sale"><span>2.2</span>折起</span></p>
 							</a>
 						</div>
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods2_4.jpg" />
+									<img src="{% static 'img/goods2_4.jpg' %}">
 									<div class="blackbox">
-										购满3000元，减300元；以此类推，上不封顶  
-										<br />
+										购满3000元，减300元；以此类推，上不封顶
+										<br>
 										5天后活动结束
 									</div>
 								</div>
-								<p>DOWNIA 澳洲家居&地毯(满减)<span class="sale"><span>2.4</span>折起</span></p>
+								<p>DOWNIA 澳洲家居&amp;地毯(满减)<span class="sale"><span>2.4</span>折起</span></p>
 							</a>
 						</div>
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods2_5.jpg" />
+									<img src="{% static 'img/goods2_5.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -416,7 +424,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods2_6.jpg" />
+									<img src="{% static 'img/goods2_6.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -427,7 +435,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods2_7.jpg" />
+									<img src="{% static 'img/goods2_7.jpg' %}">
 									<div class="blackbox">
 										6天后活动结束
 									</div>
@@ -438,7 +446,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods2_8.jpg" />
+									<img src="{% static 'img/goods2_8.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -449,7 +457,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods2_9.jpg" />
+									<img src="{% static 'img/goods2_9.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -470,7 +478,7 @@
 									<a href="#">服装</a>
 									<a href="#">鞋履</a>
 									<a href="#">包袋</a>
-									<a href="#">手表&首饰</a>
+									<a href="#">手表&amp;首饰</a>
 									<a href="#">眼镜</a>
 								</div>
 								<p><a href="#">查看更多 &gt;</a></p>
@@ -479,7 +487,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods1.jpg" />
+									<img src="{% static 'img/goods1.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -490,7 +498,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods2.jpg" />
+									<img src="{% static 'img/goods2.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -501,10 +509,10 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods3.jpg" />
+									<img src="{% static 'img/goods3.jpg' %}">
 									<div class="blackbox">
 										购满699元，减100元
-										<br />
+										<br>
 										7天后活动结束
 									</div>
 								</div>
@@ -513,10 +521,10 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods4.jpg" />
+									<img src="{% static 'img/goods4.jpg' %}">
 									<div class="blackbox">
 										购满299元，减100元
-										<br />
+										<br>
 										7天后活动结束
 									</div>
 								</div>
@@ -526,7 +534,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods5.jpg" />
+									<img src="{% static 'img/goods5.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -537,7 +545,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods6.jpg" />
+									<img src="{% static 'img/goods6.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -548,7 +556,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods7.jpg" />
+									<img src="{% static 'img/goods7.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -559,7 +567,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods8.jpg" />
+									<img src="{% static 'img/goods8.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -570,7 +578,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods9.jpg" />
+									<img src="{% static 'img/goods9.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -581,7 +589,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods3_1.jpg" />
+									<img src="{% static 'img/goods3_1.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -610,7 +618,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods4_1.jpg" />
+									<img src="{% static 'img/goods4_1.jpg' %}">
 									<div class="blackbox">
 										6天后活动结束
 									</div>
@@ -621,7 +629,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods4_2.jpg" />
+									<img src="{% static 'img/goods4_2.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -632,7 +640,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods4_3.jpg" />
+									<img src="{% static 'img/goods4_3.jpg' %}">
 									<div class="blackbox">
 										4天后活动结束
 									</div>
@@ -643,10 +651,10 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods4_4.jpg" />
+									<img src="{% static 'img/goods4_4.jpg' %}">
 									<div class="blackbox">
 										购满2件，享8.5折；满3件及以上，享8折
-										<br />
+										<br>
 										7天后活动结束
 									</div>
 								</div>
@@ -656,7 +664,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods4_5.jpg" />
+									<img src="{% static 'img/goods4_5.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -667,18 +675,18 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods4_6.jpg" />
+									<img src="{% static 'img/goods4_6.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
 								</div>
-								<p>VIKTOR & ROLF 剑走偏锋的时尚艺术男士<span class="sale"><span>2</span>折起</span></p>
+								<p>VIKTOR &amp; ROLF 剑走偏锋的时尚艺术男士<span class="sale"><span>2</span>折起</span></p>
 							</a>
 						</div>
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods7.jpg" />
+									<img src="{% static 'img/goods7.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -694,7 +702,7 @@
 					<div class="goods_list">
 						<div class="goods_banner" id="goods_beauty">
 							<div class="goods_title" id="beauty"></div>
-							<div class="chooses" id="sizeblack">
+							<!--<div class="chooses" id="sizeblack">-->
 								<div class="choose">
 									<a href="#">护肤</a>
 									<a href="#">彩妆</a>
@@ -710,7 +718,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods5_1.jpg" />
+									<img src="{% static 'img/goods5_1.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -721,7 +729,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods9.jpg" />
+									<img src="{% static 'img/goods9.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -732,7 +740,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods5_3.jpg" />
+									<img src="{% static 'img/goods5_3.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -743,7 +751,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods5_4.jpg" />
+									<img src="{% static 'img/goods5_4.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -754,7 +762,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods5_5.jpg" />
+									<img src="{% static 'img/goods5_5.jpg' %}">
 									<div class="blackbox">
 										2天后活动结束
 									</div>
@@ -765,10 +773,10 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods5_6.jpg" />
+									<img src="{% static 'img/goods5_6.jpg' %}">
 									<div class="blackbox">
 										购满499元，减50元
-										<br />
+										<br>
 										5天后活动结束
 									</div>
 								</div>
@@ -778,7 +786,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods5_7.jpg" />
+									<img src="{% static 'img/goods5_7.jpg' %}">
 									<div class="blackbox">
 										7天后活动结束
 									</div>
@@ -801,7 +809,7 @@
 									<a href="#">卫浴</a>
 									<a href="#">家电</a>
 									<a href="#">床品</a>
-									<a href="#">办公&礼品</a>
+									<a href="#">办公&amp;礼品</a>
 								</div>
 								<p><a href="#">查看更多 &gt;</a></p>
 							</div>
@@ -809,20 +817,20 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods6_1.jpg" />
+									<img src="{% static 'img/goods6_1.jpg' %}">
 									<div class="blackbox">
 										购满3000元，减300元；以此类推，上不封顶
-										<br />
+										<br>
 										4天后活动结束
 									</div>
 								</div>
-								<p>DOWNIA 澳洲家居&地毯(满减)<span class="sale"><span>2.4</span>折起</span></p>
+								<p>DOWNIA 澳洲家居&amp;地毯(满减)<span class="sale"><span>2.4</span>折起</span></p>
 							</a>
 						</div>
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods6_2.jpg" />
+									<img src="{% static 'img/goods6_2.jpg' %}">
 									<div class="blackbox">
 										6天后活动结束
 									</div>
@@ -833,18 +841,18 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods6_3.jpg" />
+									<img src="{% static 'img/goods6_3.jpg' %}">
 									<div class="blackbox">
 										1天后活动结束
 									</div>
 								</div>
-								<p>LAYTEX & TOM KATE 泰国乳胶枕<span class="sale"><span>2.8</span>折起</span></p>
+								<p>LAYTEX &amp; TOM KATE 泰国乳胶枕<span class="sale"><span>2.8</span>折起</span></p>
 							</a>
 						</div>
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods6_4.jpg" />
+									<img src="{% static 'img/goods6_4.jpg' %}">
 									<div class="blackbox">
 										3天后活动结束
 									</div>
@@ -875,7 +883,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods7_1.jpg" />
+									<img src="{% static 'img/goods7_1.jpg' %}">
 									<div class="blackbox">
 										2天后活动结束
 									</div>
@@ -886,7 +894,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods7_2.jpg" />
+									<img src="{% static 'img/goods7_2.jpg' %}">
 									<div class="blackbox">
 										2天后活动结束
 									</div>
@@ -897,7 +905,7 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods3.jpg" />
+									<img src="{% static 'img/goods3.jpg' %}">
 									<div class="blackbox">
 										4天后活动结束
 									</div>
@@ -908,10 +916,10 @@
 						<div class="goods">
 							<a href="#">
 								<div class="goods_photo">
-									<img src="img/goods7_4.jpg" />
+									<img src="{% static 'img/goods7_4.jpg' %}">
 									<div class="blackbox">
 										购满500元，减50元；以此类推，上不封顶
-										<br />
+										<br>
 										1天后活动结束
 									</div>
 								</div>
@@ -925,7 +933,7 @@
 					<h3>[&nbsp;&nbsp;活动即将开始&nbsp;&nbsp;]</h3>
 					<div class="tab">
 						<ul>
-							<li>明天</li>
+							<li class="back">明天</li>
 							<li>周二</li>
 							<li>周三</li>
 							<li>周四</li>
@@ -1041,7 +1049,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+
 		<div class="footer">
 			<div class="footer_center">
 				<ul class="footer_ul1">
@@ -1063,8 +1071,8 @@
 				</p>
 				<p><span>COPYRIGHT©2016 杭州魅俪信息技术有限公司版权所有</span>浙ICP备16004860号-1 </p>
 				<p>
-					<a href="#"><img src="img/guohui.png" /></a>
-					<a href="#"><img src="img/chengxin.png" /></a>
+					<a href="#"><img src="{% static 'img/guohui.png' %}"></a>
+					<a href="#"><img src="{% static 'img/chengxin.png' %}"></a>
 				</p>
 			</div>
 		</div>
@@ -1075,13 +1083,17 @@
 			</div>
 			<div class="side_middle">
 				<p>下载APP</p>
-				<img src="img/side_middle1.png" />
+				<img src="{% static 'img/side_middle1.png' %}">
 				<p>微信公众号</p>
-				<img src="img/side_middle2.png" /> 
+				<img src="{% static 'img/side_middle2.png' %}">
 			</div>
 			<div class="return">
 				<p></p>
 			</div>
 		</div>
+
+
+<!--test1.js:8:5-->
+<!--This site appears to use a scroll-linked positioning effect. This may not work well with asynchronous panning; see https://developer.mozilla.org/docs/Mozilla/Performance/ScrollLinkedEffects for further details and to join the discussion on related tools and features! App -->
 	</body>
 </html>

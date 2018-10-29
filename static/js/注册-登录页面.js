@@ -121,7 +121,7 @@ $(function(){
 		}
 		users.push(user); 
 		$.cookie("users", JSON.stringify(users), {expires:22, path:"/"});
-		window.open("登录页面.html");
+		window.open("login.html");
 		console.log( $.cookie("users") );
 	})
 	//会员登录
@@ -133,7 +133,7 @@ $(function(){
 			var isExists = false; //表示是否存在该用户
 			for (var i=0; i<users.length; i++) {
 				if ( users[i].name == $("#user").val() && users[i].pwd == $("#password").val() ) {
-					window.open("魅力惠.html");
+					window.open("index.html");
 					$("#wrong").hide();
 					isExists = true;
 				}

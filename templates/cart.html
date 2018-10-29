@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>魅力惠时尚奢侈品牌闪购网站 奢侈品排行榜销售NO.1 2000多个国际品牌官方合作伙伴-魅力惠官方网站</title>
-		<link rel="icon" href="img/love.png" type="image/x-icon">
-		<link rel="stylesheet" href="css/header-footer.css" />
-		<link rel="stylesheet" href="css/购物袋.css" />
-		<script type="text/javascript" src="js/jquery-1.12.3.js" ></script>
-		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
-		<script type="text/javascript" src="js/header-footer.js" ></script>
-		<script type="text/javascript" src="js/购物袋.js" ></script>
+		<link rel="icon" href="../static/img/love.png" type="image/x-icon">
+		<link rel="stylesheet" href="../static/css/header-footer.css" />
+		<link rel="stylesheet" href="../static/css/购物袋.css" />
+		<script type="text/javascript" src="../static/js/jquery-1.12.3.js" ></script>
+		<script type="text/javascript" src="../static/js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../static/js/header-footer.js" ></script>
+		<script type="text/javascript" src="../static/js/购物袋.js" ></script>
 	</head>
 	<body>
 		<div class="login">
 			<div class="header">
 				<ul class="header_left">
-					<li><img src="img/zhuceyouli.gif"/><a href="魅力惠登录-注册页面.html" >注册有礼</a></li>
+					<li><img src="../static/img/zhuceyouli.gif"/><a href="{% url 'App:register' %}" >注册有礼</a></li>
 					<li>|</li>
-					<li><a href="魅力惠登录-注册页面.html" >登录</a></li>
+					<li><a href="{% url 'App:login' %}" >登录</a></li>
 					<li>|</li>
-					<li><a href="魅力惠登录-注册页面.html" >收藏</a></li>
+					<li><a href="{% url 'App:login' %}" >收藏</a></li>
 				</ul>
 				<ul class="header_right">
 					<li><a href="#" >在线咨询</a></li>
@@ -27,7 +27,7 @@
 					<li style="position: relative;">
 						<a href="http://www.mei.com/mobile" >手机版</a>
 						<div class="download">
-							<img src="img/side_middle1.png" />
+							<img src="../static/img/side_middle1.png" />
 							<p>扫码下载APP</p>
 						</div>
 					</li>
@@ -37,15 +37,15 @@
 			</div>
 		</div>
 		<div class="logo">
-			<a href="魅力惠.html"></a>
-			<a href="魅力惠.html"></a>
+			<a href="index.html"></a>
+			<a href="index.html"></a>
 		</div>
 		<div class="nav">
 			<div class="list">
 				<ul class="list_left">
-					<li><a href="魅力惠.html">首页</a></li>
+					<li><a href="index.html">首页</a></li>
 					<li>
-						<a href="二级页面.html">女士</a>
+						<a href="index2.html">女士</a>
 						<div class="smallnav">
 							<div class="smallnav_left">
 								<h4>热门活动</h4>
@@ -215,9 +215,9 @@
 					<li><a href="#">即将推出</a></li>
 				</ul>
 				<ul class="list_right">
-					<li><a href="购物袋.html" class="sum">0</a></li>
+					<li><a href="cart.html" class="sum">0</a></li>
 					<li>|</li>
-					<li><a href="购物袋.html">￥0.00</a></li>
+					<li><a href="cart.html">￥0.00</a></li>
 					<div class="shopping">
 						<div class="no_shopping">
 							购物袋暂无商品
@@ -249,7 +249,7 @@
 						<li class="list_name">
 							<h3>保税仓直发</h3>
 							<strong>
-								<img src="img/countdown.gif" />
+								<img src="../static/img/countdown.gif" />
 								预计<span>5天</span>内发货，<span>10天</span>内送达
 							</strong>
 						</li>
@@ -264,13 +264,13 @@
 					<!--<ul>
 						<li class="list_content_first">
 							<p class="list_img">
-								<a href="商品详情.html">
+								<a href="goods.html">
 									<img src="img/product1_1_bs.jpg" title="黑色翻盖束带双肩包"/>
 								</a>
 							</p>
 							<p class="list_news">
-								<span class="brand"><a href="二级页面.html">Tory Burch</a></span>
-								<span class="goods"><a href="商品详情.html">黑色翻盖束带双肩包</a></span>
+								<span class="brand"><a href="index2.html">Tory Burch</a></span>
+								<span class="goods"><a href="goods.html">黑色翻盖束带双肩包</a></span>
 								<span>尺寸：OS</span>
 							</p>
 						</li>
@@ -333,8 +333,8 @@
 				</p>
 				<p><span>COPYRIGHT©2016 杭州魅俪信息技术有限公司版权所有</span>浙ICP备16004860号-1 </p>
 				<p>
-					<a href="#"><img src="img/guohui.png" /></a>
-					<a href="#"><img src="img/chengxin.png" /></a>
+					<a href="#"><img src="../static/img/guohui.png" /></a>
+					<a href="#"><img src="../static/img/chengxin.png" /></a>
 				</p>
 			</div>
 		</div>
