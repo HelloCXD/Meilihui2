@@ -21,10 +21,25 @@
 		<div class="login">
 			<div class="header">
 				<ul class="header_left">
-					<li><img src="{% static 'img/zhuceyouli.gif' %}"><a href="{% url 'App:register' %}" target="_blank">注册有礼</a></li>
-					<li>|</li>
-					<li><a href="{% url 'App:login' %}" target="_blank">登录</a></li>
-					<li>|</li>
+
+					{% if tel %}
+						<li>
+							<img src="{% static 'img/zhuceyouli.gif' %}">
+							<a href="{% url 'App:register' %}" target="_blank">{{ tel }}</a>
+						</li>
+						<li>|</li>
+						<li><a href="/quit/" target="_blank"> 退出 </a></li>
+						<li>|</li>
+					{% else %}
+						<li>
+							<img src="{% static 'img/zhuceyouli.gif' %}">
+							<a href="{% url 'App:register' %}" target="_blank">注册有礼</a>
+						</li>
+						<li>|</li>
+						<li><a href="{% url 'App:login' %}" target="_blank">登录</a></li>
+						<li>|</li>
+					{% endif %}
+
 					<li><a href="{% url 'App:login' %}" target="_blank">收藏</a></li>
 				</ul>
 				<ul class="header_right">
@@ -241,7 +256,7 @@
 					<h3>[&nbsp;&nbsp;今日上新&nbsp;&nbsp;]</h3>
 					<div class="goods_list">
 						<div class="goods">
-							<a href="index2.html" target="_blank">
+							<a href="{% url 'App:index2' %}" target="_blank">
 								<div class="goods_photo">
 									<img src="{% static 'img/goods1.jpg' %}">
 									<div class="blackbox">
@@ -377,7 +392,7 @@
 									<img src="{% static 'img/goods2_2.jpg' %}">
 									<div class="blackbox">
 										购满699元，减50元；满1299元，减100元
-										<br>
+										<br/>
 										3天后活动结束
 									</div>
 								</div>
@@ -702,7 +717,7 @@
 					<div class="goods_list">
 						<div class="goods_banner" id="goods_beauty">
 							<div class="goods_title" id="beauty"></div>
-							<!--<div class="chooses" id="sizeblack">-->
+							<div class="chooses" id="sizeblack">
 								<div class="choose">
 									<a href="#">护肤</a>
 									<a href="#">彩妆</a>
@@ -1092,8 +1107,5 @@
 			</div>
 		</div>
 
-
-<!--test1.js:8:5-->
-<!--This site appears to use a scroll-linked positioning effect. This may not work well with asynchronous panning; see https://developer.mozilla.org/docs/Mozilla/Performance/ScrollLinkedEffects for further details and to join the discussion on related tools and features! App -->
 	</body>
 </html>
