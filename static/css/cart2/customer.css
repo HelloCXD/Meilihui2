@@ -1,0 +1,4873 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background: #fff;
+    font: 12px/1.16 'Microsoft YaHei', Tahoma, Arial, Helvetica, sans-serif;
+    color: #000;
+    text-align: left
+}
+
+img {
+    border: 0;
+    vertical-align: top
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer
+}
+
+a:hover {
+    text-decoration: none
+}
+
+:focus {
+    outline: 0
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: normal
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #000
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: bold
+}
+
+h4 {
+    font-size: 13px;
+    font-weight: bold
+}
+
+h5 {
+    font-size: 12px;
+    font-weight: bold
+}
+
+h6 {
+    font-size: 11px;
+    font-weight: bold
+}
+
+form {
+    display: inline
+}
+
+fieldset {
+    border: 0
+}
+
+legend {
+    display: none
+}
+
+table {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    font-size: 100%
+}
+
+caption, th, td {
+    vertical-align: top;
+    text-align: left;
+    font-weight: normal
+}
+
+address {
+    font-style: normal
+}
+
+cite {
+    font-style: normal
+}
+
+q, blockquote {
+    quotes: none
+}
+
+q:before, q:after {
+    content: ''
+}
+
+small {
+    font-size: 10px
+}
+
+big {
+    font-size: 1.2em
+}
+
+ul, ol {
+    list-style: none
+}
+
+.hidden {
+    display: block !important;
+    border: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important
+}
+
+.nobr {
+    white-space: nowrap !important
+}
+
+.wrap {
+    white-space: normal !important
+}
+
+.a-left {
+    text-align: left !important
+}
+
+.a-center {
+    text-align: center !important
+}
+
+.a-right {
+    text-align: right !important
+}
+
+.v-top {
+    vertical-align: top
+}
+
+.v-middle {
+    vertical-align: middle
+}
+
+.f-left, .left {
+    float: left !important
+}
+
+.f-right, .right {
+    float: right !important
+}
+
+.f-none {
+    float: none !important
+}
+
+.f-fix {
+    float: left;
+    width: 100%
+}
+
+.no-display {
+    display: none
+}
+
+.no-margin {
+    margin: 0 !important
+}
+
+.no-padding {
+    padding: 0 !important
+}
+
+.no-bg {
+    background: none !important
+}
+
+.header {
+    width: 1000px;
+    height: 120px;
+    margin: 0 auto
+}
+
+.main {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0 50px;
+    font-size: 14px;
+    font-family: "PingFang SC", "Microsoft YaHei", SimSun
+}
+
+.col2-layout .col-main {
+    float: right;
+    width: 820px
+}
+
+.col-left {
+    float: left;
+    width: 180px
+}
+
+.footer-container {
+    background: #f2f2f2
+}
+
+.footer {
+    width: 1000px;
+    margin: 0 auto;
+    height: 91px
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: separate
+}
+
+input.input-text {
+    background: #fff;
+    border: 1px solid #d7d7d7
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+    border: 0
+}
+
+input, select, textarea, button {
+    font-family: "PingFang SC", "Microsoft YaHei", SimSun;
+    vertical-align: middle;
+    color: #000
+}
+
+button.button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+button.button {
+    -webkit-border-fit: lines;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    overflow: visible;
+    cursor: pointer;
+    vertical-align: middle
+}
+
+a.button, label.button, button.button span {
+    border: 0;
+    cursor: pointer;
+    display: -moz-inline-stack;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center
+}
+
+a.button span, button.button span span {
+    display: -moz-inline-block;
+    display: inline-block;
+    white-space: nowrap
+}
+
+.button:active {
+    bottom: -1px;
+    right: -1px;
+    position: relative;
+    z-index: 2
+}
+
+:-moz-placeholder {
+    color: #d7d7d7;
+    font-size: 14px;
+    font-family: "PingFang SC", "Microsoft YaHei", SimSun
+}
+
+::-moz-placeholder {
+    color: #d7d7d7;
+    font-size: 14px;
+    font-family: "PingFang SC", "Microsoft YaHei", SimSun
+}
+
+:-ms-input-placeholder {
+    color: #d7d7d7;
+    font-size: 14px;
+    font-family: "PingFang SC", "Microsoft YaHei", SimSun
+}
+
+::-webkit-input-placeholder {
+    color: #d7d7d7;
+    font-size: 14px;
+    font-family: "PingFang SC", "Microsoft YaHei", SimSun
+}
+
+#cboxOverlay, #cboxWrapper, #colorbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0)
+}
+
+#cboxWrapper {
+    max-width: none
+}
+
+#cboxOverlay {
+    position: fixed;
+    width: 100%;
+    height: 100%
+}
+
+#cboxContent {
+    position: relative
+}
+
+#cboxLoadedContent {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch
+}
+
+#cboxLoadingGraphic, #cboxLoadingOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+#cboxClose, #cboxNext, #cboxPrevious, #cboxSlideshow {
+    cursor: pointer
+}
+
+.cboxPhoto {
+    float: left;
+    margin: auto;
+    border: 0;
+    display: block;
+    max-width: none;
+    -ms-interpolation-mode: bicubic
+}
+
+.cboxIframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+    padding: 0;
+    margin: 0
+}
+
+#cboxContent, #cboxLoadedContent, #colorbox {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+#cboxOverlay {
+    background: #000;
+    -webkit-opacity: .2;
+    -moz-opacity: .2;
+    opacity: .2;
+    filter: alpha(opacity=20)
+}
+
+#colorbox {
+    outline: 0
+}
+
+#cboxContent {
+    background: #fff;
+    overflow: hidden
+}
+
+.cboxIframe {
+    background: #fff
+}
+
+#cboxError {
+    padding: 50px;
+    border: 1px solid #ccc
+}
+
+#cboxLoadingOverlay {
+    background: #fff url(https://cdn11.mei.com/images/colorbox/loading.gif) no-repeat 50% 50%
+}
+
+#cboxClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 30px;
+    background: url(https://cdn11.mei.com/images/colorbox/close.png) no-repeat 10px 8px;
+    _background: url(https://cdn11.mei.com/images/colorbox/close.gif) no-repeat 10px 8px;
+    cursor: pointer
+}
+
+.bx-wrapper {
+    position: relative;
+    padding: 0;
+    *zoom: 1
+}
+
+.bx-wrapper .bx-viewport {
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0)
+}
+
+.bx-controls a {
+    position: absolute;
+    text-indent: -999em
+}
+
+.myConfirm {
+    width: 280px;
+    padding: 35px 0 27px;
+    text-align: center
+}
+
+.myConfirm .title {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 30px 30px
+}
+
+.myConfirm .actions {
+    padding: 0 0 0 8px
+}
+
+.myConfirm .button {
+    width: 78px;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 8px 0 0;
+    font-size: 14px;
+    background: #eee
+}
+
+.myConfirm .btn-confirm {
+    background: #000;
+    color: #fff
+}
+
+.myAccount {
+    background: #eee;
+    min-height: 1040px;
+    _height: 1040px
+}
+
+.user-info {
+    padding: 18px 0 35px;
+    text-align: center
+}
+
+.user-avatar {
+    position: relative;
+    width: 102px;
+    height: 102px;
+    display: inline-block
+}
+
+.user-avatar img {
+    width: 102px;
+    height: 102px
+}
+
+.user-avatar .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102px;
+    height: 102px;
+    background: url(https://cdn11.mei.com/images/avatar_cover.png) no-repeat 0 0;
+    _background: url(https://cdn11.mei.com/images/avatar_cover.gif) no-repeat 0 0
+}
+
+.user-name {
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold
+}
+
+.user-credit {
+    color: #9e9e9e;
+    display: none
+}
+
+.user-credit .price {
+    color: #000
+}
+
+.account-tips {
+    margin: 0 0 -4px 2px;
+    position: relative;
+    display: inline-block;
+    background: url(https://cdn11.mei.com/images/icon001.png) no-repeat 0 0;
+    width: 18px;
+    height: 18px
+}
+
+.popUp {
+    height: 56px;
+    width: 145px;
+    background: url(https://cdn11.mei.com/images/pop001.png) no-repeat 0 0;
+    position: absolute;
+    top: 20px;
+    right: -19px;
+    z-index: 99;
+    font-size: 12px;
+    color: #666;
+    display: inline-block;
+    padding: 19px 14px 11px;
+    display: none;
+    line-height: 17px;
+    text-align: left;
+    z-index: 2
+}
+
+.popUp b {
+    color: #000
+}
+
+.user-popBox .myConfirm {
+    width: 254px;
+    padding: 44px 53px 24px;
+    text-align: center
+}
+
+.user-popBox .myConfirm .text {
+    font-size: 14px;
+    height: 68px;
+    line-height: 20px;
+    color: #666
+}
+
+.user-popBox .myConfirm .text span {
+    color: #000
+}
+
+.user-popBox .myConfirm .button {
+    width: 140px;
+    height: 36px;
+    line-height: 36px
+}
+
+.left-nav dt {
+    height: 32px;
+    line-height: 32px;
+    font-size: 18px;
+    color: #9e9e9e
+}
+
+.left-nav dd {
+    padding: 0 0 20px
+}
+
+.left-nav a {
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 0 0 37px;
+    color: #000
+}
+
+.left-nav a:hover, .left-nav .current {
+    border-left: 4px solid #000;
+    padding: 0 0 0 33px
+}
+
+.left-nav .current {
+    background: #eee;
+    font-weight: bold
+}
+
+.tabNav {
+    height: 58px;
+    line-height: 58px;
+    background: #fff;
+    text-align: center
+}
+
+.tabNav span, .tabNav a {
+    position: relative;
+    float: left;
+    width: 410px;
+    height: 58px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.tabNav span, .tabNav .current {
+    background: #eee;
+    cursor: default
+}
+
+.tabNum3 span, .tabNum3 a {
+    width: 273px
+}
+
+.tabNum3 .last {
+    width: 274px
+}
+
+.tabNum4 span, .tabNum4 a {
+    width: 205px
+}
+
+.tabNum5 span, .tabNum5 a {
+    width: 164px
+}
+
+.orderNav sup {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 13px;
+    background: url(https://cdn11.mei.com/images/customer/orderNavNumBg.gif) 0 0 no-repeat
+}
+
+.orderNav .num-unpaid {
+    background-position: 0 -18px;
+    color: #fff
+}
+
+.orderList {
+    padding: 30px;
+    margin: 0 0 -30px
+}
+
+.emptyOrderList {
+    padding: 120px 0 0;
+    text-align: center;
+    color: #9e9e9e
+}
+
+.emptyOrderList .goShopping {
+    color: #fff;
+    background: #dd2828;
+    display: block;
+    width: 78px;
+    height: 28px;
+    line-height: 28px;
+    font-weight: bold;
+    margin: 15px auto
+}
+
+.orderItem {
+    padding: 17px 20px 0 19px;
+    background: #fff;
+    margin: 0 0 20px;
+    line-height: 18px
+}
+
+.orderItem .data-table {
+    margin: 16px 0 0
+}
+
+.orderInfo {
+    position: relative;
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px
+}
+
+.orderInfo p {
+    float: left
+}
+
+.orderInfo .orderNum {
+    padding-right: 50px
+}
+
+.orderInfo .remove {
+    position: absolute;
+    top: -9px;
+    right: -4px;
+    float: none;
+    width: 24px;
+    height: 24px;
+    background: url(https://cdn11.mei.com/images/customer/btnRemoveOrder.gif) 4px 4px no-repeat;
+    cursor: pointer;
+    display: none;
+    _display: block
+}
+
+.orderItem:hover .remove {
+    display: block
+}
+
+.cell-img {
+    padding: 2px 0 20px;
+    position: relative
+}
+
+.cell-info {
+    font-weight: bold
+}
+
+.cell-info .product-opts {
+    padding: 14px 0 0;
+    font-size: 12px;
+    font-weight: normal;
+    color: #9e9e9e
+}
+
+.cell-price {
+    padding: 0 42px 0 0
+}
+
+.cell-subtotal .subtotal {
+    font-weight: bold
+}
+
+.cell-subtotal .shipping-fee, .cell-subtotal .tax-fee, .cell-status {
+    font-size: 12px;
+    color: #9e9e9e
+}
+
+.cell-actions a {
+    width: 78px;
+    height: 28px;
+    line-height: 28px;
+    background: #eee;
+    margin: 0 0 8px
+}
+
+.cell-actions .link-pay {
+    background: #dd2828;
+    color: #fff;
+    font-weight: bold
+}
+
+.cell-actions .link-rate {
+    background: #000;
+    color: #fff;
+    font-weight: bold
+}
+
+.orderItem .latestTracking {
+    padding: 0 0 16px 26px;
+    font-size: 12px;
+    line-height: 14px;
+    background: url(https://cdn11.mei.com/images/customer/latestTrackingIcon.gif) 0 0 no-repeat;
+    color: #9e9e9e
+}
+
+.subPackage {
+    height: 20px;
+    line-height: 20px;
+    padding: 14px 0 0;
+    background: url(https://cdn11.mei.com/images/customer/subPackageBg.gif) 0 14px no-repeat
+}
+
+.subPackage span {
+    display: inline-block;
+    width: 46px;
+    height: 20px;
+    padding: 0 0 0 3px;
+    color: #fff
+}
+
+.ui-page-wrap {
+    padding: 0 24px 29px 0;
+    height: 26px;
+    line-height: 26px
+}
+
+.ui-page-num {
+    float: right
+}
+
+.ui-page-num a, .ui-page-num p {
+    float: left;
+    width: 26px;
+    height: 26px;
+    margin: 0 6px 0 0;
+    text-align: center;
+    background: #fff
+}
+
+.ui-page-num .ui-page-prev, .ui-page-num .ui-page-next {
+    background: url(https://cdn11.mei.com/images/customer/pagerBtns.gif) 0 0 no-repeat;
+    text-indent: -999em
+}
+
+.ui-page-num .ui-page-next {
+    background-position: 0 -26px
+}
+
+.ui-page-num .ui-page-prevLink {
+    background-position: 0 -52px
+}
+
+.ui-page-num .ui-page-nextLink {
+    background-position: 0 -78px
+}
+
+.ui-page-num .ui-page-cur {
+    background: #000;
+    color: #fff
+}
+
+.ui-page-num .ui-page-break {
+    width: 12px;
+    background: 0
+}
+
+.reviewedList .orderNum {
+    width: 330px
+}
+
+.orderInfo .ratedAt {
+    width: 170px
+}
+
+.orderInfo .helpful {
+    float: right;
+    text-align: right
+}
+
+.helpful .num {
+    color: #a78e56
+}
+
+.orderInfo .ratedStars {
+    float: left;
+    width: 125px
+}
+
+.ratedStars label {
+    float: left;
+    width: 33px
+}
+
+.starsBox {
+    float: left;
+    width: 88px;
+    height: 16px;
+    margin: -2px 0 0;
+    background: url(https://cdn11.mei.com/images/customer/ratedStars.gif) 0 0 repeat-x
+}
+
+.starsBox .stars {
+    width: 88px;
+    height: 16px;
+    background: url(https://cdn11.mei.com/images/customer/ratedStars.gif) 0 -16px repeat-x
+}
+
+.starsBox .star1 {
+    width: 18px
+}
+
+.starsBox .star2 {
+    width: 36px
+}
+
+.starsBox .star3 {
+    width: 48px
+}
+
+.starsBox .star4 {
+    width: 72px
+}
+
+.cell-comment {
+    font-size: 12px;
+    line-height: 18px
+}
+
+.cell-comment .label {
+    float: left;
+    width: 60px
+}
+
+.cell-comment .comments {
+    float: left;
+    width: 331px;
+    color: #9e9e9e
+}
+
+.photos-thumb {
+    padding: 5px 0 4px
+}
+
+.photos-thumb li {
+    float: left;
+    width: 62px;
+    height: 82px;
+    margin: 0 4px 0 0
+}
+
+.photos-thumb li img {
+    width: 62px;
+    height: 82px
+}
+
+.grid {
+    margin: 0 -20px 0 0
+}
+
+.grid .item {
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 310px;
+    margin: 0 20px 30px 0;
+    overflow: hidden;
+    background: #fff
+}
+
+.myFavorite {
+    padding: 16px 20px 0 20px
+}
+
+.favActions {
+    padding: 0 0 16px;
+    height: 28px;
+    line-height: 28px
+}
+
+.favActions .batch {
+    float: left
+}
+
+.favActions .switcher {
+    float: right
+}
+
+.favActions .button {
+    display: none;
+    width: 78px;
+    height: 28px;
+    background: #fff
+}
+
+.favActions .btn-edit, .favEditing .favActions .button {
+    display: inline-block
+}
+
+.batch .button, .favActions .deleteAll {
+    background: #fff url(https://cdn11.mei.com/images/customer/favEdit.gif) 17px 8px no-repeat;
+    text-align: left;
+    text-indent: 33px
+}
+
+.favActions .deleteAll {
+    background-image: url(https://cdn11.mei.com/images/customer/favDel.gif)
+}
+
+.favActions .selectAll {
+    background: #fff url(https://cdn11.mei.com/images/customer/icon_checkbox.gif) no-repeat 2px -6px;
+    margin: 0 6px 0 0
+}
+
+.favActions .labelChecked {
+    background-position: -38px -46px
+}
+
+.favGrid .item {
+    text-align: center
+}
+
+.favGrid a {
+    cursor: default
+}
+
+.favGrid a:link {
+    cursor: pointer
+}
+
+.favImage {
+    display: block;
+    height: 225px;
+    padding: 15px 0 0
+}
+
+.favImage img {
+    width: 158px;
+    height: 200px
+}
+
+.launch-date {
+    position: absolute;
+    bottom: 70px;
+    left: 5px;
+    width: 168px;
+    line-height: 22px;
+    background: #fff;
+    color: #9e9e9e;
+    font-size: 12px;
+    border: 1px solid #d7d7d7
+}
+
+.favLink {
+    display: block;
+    height: 32px;
+    line-height: 16px;
+    padding: 8px 0 0;
+    margin: 0 0 6px;
+    overflow: hidden
+}
+
+.favGrid .linkChoice {
+    position: absolute;
+    top: 106px;
+    left: 48px;
+    z-index: 2;
+    width: 84px;
+    line-height: 28px;
+    background: #fff;
+    font-size: 12px;
+    cursor: pointer
+}
+
+.itemCover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 240px;
+    background: #fff;
+    /**filter: alpha(opacity=40);*/
+    -moz-opacity: .4;
+    -khtml-opacity: .4;
+    opacity: .4
+}
+
+.gridCover {
+    display: none
+}
+
+.favEditing .gridCover {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.gridCover .bg {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    -webkit-opacity: .4;
+    -moz-opacity: .4;
+    opacity: .4;
+    filter: alpha(opacity=40);
+    cursor: pointer
+}
+
+.gridCover .check {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    background: url(https://cdn11.mei.com/images/customer/favCheck.gif) 0 0 no-repeat;
+    cursor: pointer
+}
+
+.favSelected .check {
+    background-position: 0 -32px
+}
+
+.favGrid .addToCart {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34px;
+    height: 34px;
+    background: url(https://cdn11.mei.com/images/customer/favCart.png) 10px 11px no-repeat;
+    _background: url(https://cdn11.mei.com/images/customer/favCart.gif) 10px 11px no-repeat;
+    cursor: pointer
+}
+
+.over .addToCart {
+    display: block
+}
+
+.favEditing .addToCart, .favEditing .favActions .btn-edit {
+    display: none
+}
+
+.xzcc_content {
+    margin-bottom: 20px
+}
+
+.product_choose h3 {
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 10px
+}
+
+.pop_content .product_color {
+    margin-bottom: 20px
+}
+
+.pop_content .product_size {
+    margin-bottom: 20px
+}
+
+.pop_content .product_size ul li {
+    width: 50px;
+    margin-right: 10px;
+    margin-top: 10px
+}
+
+.pop_content .product_size ul li span {
+    width: 48px
+}
+
+.pop_content .product_size ul li span:visited {
+    width: 48px
+}
+
+.pop_content .product_size ul li .product_size_none {
+    background: url(https://cdn11.mei.com/images/product_size_none.gif) no-repeat
+}
+
+.myFavBrands {
+    padding: 30px 30px 0
+}
+
+.myFavBrands .item {
+    position: relative;
+    margin: 0 0 30px;
+    padding: 37px 60px 23px 60px;
+    background: #fff
+}
+
+.brandKV {
+    position: relative
+}
+
+.brandTxt {
+    height: 638px;
+    height: 148px;
+    border: 1px solid #d7d7d7
+}
+
+.brandKV .brandName {
+    position: absolute;
+    top: 38px;
+    left: 10px;
+    width: 620px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 32px;
+    font-family: Arial;
+    color: #fff;
+    text-align: center
+}
+
+.brandTxt .brandName {
+    color: #000
+}
+
+.brandStory {
+    padding: 8px 0 0;
+    line-height: 24px
+}
+
+.favBrandList .actions {
+    position: absolute;
+    top: 140px;
+    left: 70px;
+    width: 610px;
+    padding: 0 0 0 10px;
+    height: 26px;
+    text-align: center
+}
+
+.brandEvents {
+    padding: 10px 0 7px;
+    text-align: center
+}
+
+.brandEvents ul {
+    display: inline-block
+}
+
+.brandEvents li {
+    float: left;
+    margin: 0 20px 0 0
+}
+
+.favBrandSlider ul {
+    float: left;
+    display: block
+}
+
+.favBrandSlider .last {
+    margin: 0
+}
+
+.brandEvents .bx-prev, .brandEvents .bx-next {
+    left: -48px;
+    top: 22px;
+    width: 38px;
+    height: 76px;
+    background: url(https://cdn11.mei.com/images/customer/favSliderBtns.gif) 0 0 no-repeat
+}
+
+.brandEvents .bx-next {
+    left: auto;
+    right: -48px;
+    top: 22px;
+    width: 38px;
+    height: 76px;
+    background-position: 0 -76px
+}
+
+.favBrandList .button {
+    width: 84px;
+    height: 24px;
+    line-height: 24px;
+    background: #fff;
+    border: 1px solid #000;
+    font-size: 12px;
+    margin: 0 9px 0 0
+}
+
+.favBrandList .btnLinkBrand2 {
+    background: #000;
+    border: 1px solid #fff;
+    color: #fff
+}
+
+.favBrandList .btnSubscribe {
+    background: #000;
+    color: #fff
+}
+
+.favBrandList .btnSubscribed {
+    background: #d7d7d7
+}
+
+.favBrandList .new, .favBrandList .remove {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 46px;
+    height: 46px;
+    background: url(https://cdn11.mei.com/images/customer/favBrandIcon.gif) 0 0 no-repeat
+}
+
+.favBrandList .remove {
+    top: 6px;
+    left: 722px;
+    width: 32px;
+    height: 32px;
+    background-position: -46px -46px;
+    cursor: pointer
+}
+
+.brandSubscribe {
+    width: 500px;
+    padding: 39px 50px 38px
+}
+
+.brandSubscribe .col-1 {
+    float: left;
+    width: 200px;
+    padding: 0 49px 0 0;
+    margin: 0 94px 0 0;
+    border-right: 1px solid #d7d7d7
+}
+
+.brandSubscribe .col-2 {
+    float: left;
+    width: 111px
+}
+
+.brandSubscribe .title {
+    padding: 15px 0 20px;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center
+}
+
+.brandSubscribe .input-text {
+    width: 198px;
+    text-indent: 11px;
+    height: 38px;
+    line-height: 38px
+}
+
+.brandSubscribe .action {
+    padding: 16px 0 31px
+}
+
+.brandSubscribe .btnConfirm span {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background: #000;
+    color: #fff;
+    text-align: center
+}
+
+.brandSubscribe .tips {
+    padding: 7px 0 0;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #9e9e9e
+}
+
+.logistics {
+    width: 1000px;
+    height: auto;
+    margin: 20px auto
+}
+
+.LogisticsState {
+    font-size: 18px;
+    color: #9e9e9e;
+    font-weight: 500
+}
+
+.labe {
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #9e9e9e
+}
+
+.package-status {
+    font-size: 18px;
+    color: #000;
+    padding-left: 20px;
+    line-height: 28px;
+    font-weight: bold
+}
+
+.tracing-title {
+    margin: 60px 0 5px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px
+}
+
+.tracing-title > h3, .box-hd > h3 {
+    float: left;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline
+}
+
+.service {
+    float: right
+}
+
+.online-rma span {
+    width: 76px;
+    height: 26px;
+    border: 1px solid #d7d7d7;
+    vertical-align: middle;
+    line-height: 26px;
+    margin: 0 1px 0 10px;
+    display: inline-block;
+    text-align: center;
+    background: #fff;
+    font-size: 12px
+}
+
+.tracing {
+    width: 940px;
+    min-height: 30px;
+    padding: 30px 30px;
+    background: #eee;
+    overflow: hidden
+}
+
+.tracing-box {
+    width: 938px
+}
+
+.tracing-info {
+    width: 100%;
+    position: relative;
+    font-size: 14px;
+    color: #9d9d9d
+}
+
+.info-failed {
+    text-align: center;
+    color: #9e9e9e;
+    letter-spacing: .5px
+}
+
+.refresh {
+    width: 76px;
+    height: 26px;
+    border: 1px solid #d7d7d7;
+    vertical-align: middle;
+    line-height: 26px;
+    background: #fff;
+    font-size: 12px;
+    margin-top: 10px
+}
+
+.point {
+    background: #eee url(https://cdn11.mei.com/images/point_icon.jpg) no-repeat 0 -40px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    margin: 1px 0 0 -9px;
+    padding-left: 30px
+}
+
+.status-list {
+    padding-bottom: 20px;
+    border-left: 1px solid #d8d8d8
+}
+
+.status-list li {
+    padding-left: 75px;
+    margin-bottom: 5px;
+    line-height: 20px
+}
+
+.status-list .tracing-tips {
+    padding-left: 128px
+}
+
+.second {
+    background-position: 0 -20px
+}
+
+.d-hidden {
+    visibility: hidden
+}
+
+.update {
+    color: #000;
+    background-position: 0 0;
+    font-weight: 600
+}
+
+.orderReview {
+    width: 1000px;
+    height: auto;
+    margin: 30px auto 20px
+}
+
+.review {
+    width: 1000px
+}
+
+.commented {
+    width: 1000px;
+    margin-bottom: 60px
+}
+
+.review-box {
+    padding: 30px 30px;
+    background: #eee
+}
+
+.left-span {
+    width: 70px;
+    height: 20px;
+    float: left;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    padding-right: 35px;
+    text-align: right;
+    line-height: 20px
+}
+
+.order-details {
+    width: 775px;
+    background: #fff;
+    float: left;
+    padding: 30px
+}
+
+.productImg {
+    float: left;
+    height: auto;
+    overflow: hidden
+}
+
+.productImg img {
+    width: 60px;
+    height: 80px
+}
+
+.productInfo {
+    float: left;
+    line-height: 18px;
+    padding: 0 0 0 10px;
+    width: 600px;
+    text-align: left
+}
+
+.brandName, .productName {
+    font-size: 14px;
+    color: #000;
+    font-weight: bold
+}
+
+.productRight {
+    float: left
+}
+
+.productRight p {
+    text-align: right;
+    line-height: 18px;
+    width: 105px;
+    font-size: 12px
+}
+
+.score {
+    margin: 25px auto
+}
+
+.rateStar, .commentStar {
+    height: 26px;
+    width: 36px;
+    float: left;
+    display: block;
+    margin: -5px 5px 0 -5px;
+    background: url(https://cdn11.mei.com/images/icon.jpg) no-repeat -4px 0;
+    text-indent: -999em;
+    cursor: pointer
+}
+
+.commentStar {
+    cursor: default
+}
+
+.activeStar {
+    background-position: -45px 0
+}
+
+.comment {
+    width: 835px;
+    float: left;
+    position: relative
+}
+
+.comment p {
+    color: #9e9e9e;
+    line-height: 18px;
+    text-align: left
+}
+
+.commentArea {
+    width: 805px;
+    height: 110px;
+    line-height: 18px;
+    resize: none;
+    overflow: auto;
+    padding: 15px;
+    border: 0 none;
+    background: #fff
+}
+
+.comment-limit {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #d7d7d7;
+    font-size: 14px
+}
+
+.share-box {
+    margin: 30px auto 0
+}
+
+.showList li {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    margin-right: 10px;
+    display: block;
+    float: left;
+    position: relative
+}
+
+.showList img {
+    display: block;
+    border: 0;
+    width: 100px;
+    height: 100px;
+    overflow: hidden
+}
+
+.addPic {
+    background: url(https://cdn11.mei.com/images/add.gif) no-repeat 33px 25px;
+    height: 38px;
+    margin-right: 0;
+    padding-top: 65px;
+    text-align: center;
+    width: 98px
+}
+
+.delete-hide {
+    display: none
+}
+
+.imgList, .addPic {
+    cursor: pointer
+}
+
+.imgList:hover .delete-hide {
+    display: block
+}
+
+.delete-btn {
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    padding-left: 47px;
+    line-height: 27px;
+    z-index: 2;
+    background: url(https://cdn11.mei.com/images/delete_icon.png) no-repeat 28px 7px
+}
+
+.deletemask {
+    filter: alpha(opacity:40);
+    opacity: .4;
+    background: #000;
+    width: 100px;
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1
+}
+
+.tip {
+    color: #9e9e9e;
+    margin: 10px 0 0 105px;
+    font-size: 12px;
+    text-align: left
+}
+
+.submit-btn {
+    text-align: right;
+    margin: 20px 0
+}
+
+.submit-btn a {
+    width: 120px;
+    height: 38px;
+    background: #000;
+    color: #fff;
+    vertical-align: middle;
+    line-height: 38px;
+    font-size: 16px
+}
+
+.submit-btn a:hover, .submit-btn a:active {
+    color: #fff;
+    font-weight: bold
+}
+
+.rate-item {
+    background: #eee;
+    float: left
+}
+
+.trade-detail {
+    width: 1000px;
+    height: auto;
+    margin-top: 20px
+}
+
+.trade-status {
+    width: 800px;
+    margin: 0 auto
+}
+
+.trade-status p {
+    color: #9e9e9e;
+    font-size: 16px;
+    padding-right: 60px;
+    display: inline-block
+}
+
+.trade-status span {
+    color: #000;
+    padding-left: 10px;
+    font-weight: bold
+}
+
+.trade-status em {
+    font-size: 14px;
+    font-style: normal;
+    padding-left: 5px
+}
+
+.trade-status a {
+    width: 91px;
+    height: 28px;
+    line-height: 28px;
+    background: #eee;
+    margin: 0 0 0 30px;
+    display: inline-block;
+    font-size: 12px
+}
+
+.trade-status .link-pay {
+    margin: 0 0 0 30px;
+    width: 92px;
+    font-size: 12px
+}
+
+.statusBar {
+    width: 800px;
+    margin: 20px auto;
+    background: url(https://cdn11.mei.com/images/state.jpg) no-repeat;
+    height: 26px;
+    text-indent: -999em
+}
+
+.status-text li {
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    width: 160px;
+    font-weight: bold
+}
+
+.trade-info {
+    margin-bottom: 28px
+}
+
+.trade-info > h3 {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 10px
+}
+
+.infoBox {
+    width: 940px;
+    padding: 20px 30px;
+    background: #eee;
+    overflow: hidden
+}
+
+.infoBox > p {
+    height: 28px;
+    line-height: 28px;
+    font-weight: 400
+}
+
+.download-invoice {
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: 12px;
+    background: #eee url(https://cdn11.mei.com/images/download.png) no-repeat 0 0;
+    text-decoration: underline;
+    cursor: pointer
+}
+
+.download-invoice:hover {
+    color: #dd2828;
+    background-position: 0 -18px
+}
+
+.download-invoice a:hover {
+    color: #dd2828;
+    background-position: 0 -18px
+}
+
+.info-title {
+    font-weight: 600;
+    width: 85px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 20px
+}
+
+.shoppingList {
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 10px
+}
+
+.listTitle {
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    padding-bottom: 6px;
+    width: 100%
+}
+
+.listTitle li {
+    float: left;
+
+    font-weight: bold;
+    height: 20px;
+    text-align: center;
+    width: 160px
+}
+
+.listTitle02 li {
+    width: 125px
+}
+
+.listTitle .listName {
+    text-align: left;
+    width: 300px
+}
+
+.listDetail {
+    padding-top: 10px;
+    height: auto
+}
+
+.listContent li {
+    float: left;
+    text-align: center;
+    width: 160px;
+    font-size: 12px
+}
+
+.listContent02 li {
+    width: 125px
+}
+
+.listContent02 li.toRma {
+    font-size: 14px;
+    cursor: pointer
+}
+
+.listContent .listLeft {
+    width: 300px
+}
+
+.listImg {
+    float: left;
+    width: 105px;
+    margin-right: 15px;
+    overflow: hidden;
+    position: relative
+}
+
+.listImg img {
+    float: left;
+    height: 140px;
+    width: 105px;
+    display: block
+}
+
+.listImg .gift_img, .cell-img .gift_img {
+    width: 19px;
+    height: 16px;
+    position: absolute;
+    top: 5px;
+    left: 5px
+}
+
+.content_description {
+    text-align: left;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+    width: 180px
+}
+
+.product-tips {
+    color: #9e9e9e;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 12px 0 0
+}
+
+.totalPrice {
+    line-height: 24px
+}
+
+.totalPayment, .orderPrice {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px
+}
+
+.orderPrice {
+    color: #dd2828
+}
+
+.orderBtn {
+    height: 38px;
+    width: 100%;
+    text-align: right
+}
+
+.orderBtn a {
+    width: 120px;
+    background: #eee;
+    color: #000;
+    font-size: 16px;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 10px
+}
+
+.orderBtn a:hover, .orderBtn a:active {
+    font-weight: bold
+}
+
+.orderBtn .confirmBtn, .orderBtn .commentBtn {
+    background: #000;
+    color: #fff
+}
+
+a.cancelBtn:hover, a.cancelBtn:active {
+    color: #000
+}
+
+.pro-tax {
+    padding-top: 5px
+}
+
+.paysucceed {
+    background: url(https://cdn11.mei.com/images/success.jpg) no-repeat
+}
+
+.infoBox em {
+    background: url(https://cdn11.mei.com/images/zhifubao_icon.jpg) no-repeat;
+    width: 60px;
+    height: 24px;
+    display: inline-block;
+    text-indent: -999em;
+    line-height: 24px
+}
+
+.delivery {
+    background: url(https://cdn11.mei.com/images/delivery.jpg) no-repeat
+}
+
+.completed {
+    background: url(https://cdn11.mei.com/images/completed.jpg) no-repeat
+}
+
+.cancel {
+    background: url(https://cdn11.mei.com/images/cancel.jpg) no-repeat
+}
+
+.package {
+    background: url(https://cdn11.mei.com/images/package.jpg) no-repeat
+}
+
+li.toRma a.link-rma {
+    border: 1px solid #ccc;
+    display: inline-block;
+    background: #fff;
+    font-size: 12px;
+    width: 76px;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: top;
+    margin: -10px
+}
+
+.orderInfo .returnNum {
+    width: 240px
+}
+
+.cell-actions .link-submit {
+    color: #fff;
+    font-weight: bold;
+    background: #dd2828
+}
+
+.moreService {
+    height: 25px;
+    text-align: right;
+    padding: 0 30px;
+    margin-bottom: -20px;
+    font-size: 12px
+}
+
+.returnNav {
+    height: 68px;
+    text-align: center;
+    line-height: 68px;
+    font-size: 16px;
+    font-weight: bold
+}
+
+.returnDetail {
+    font-weight: normal;
+    font-size: 12px;
+    text-decoration: underline;
+    color: #9e9e9e;
+    padding-left: 10px;
+    cursor: pointer
+}
+
+.no-returns {
+    text-align: center
+}
+
+.policyContent {
+    padding: 0 30px 35px 30px;
+    width: 760px;
+    background: #eee;
+    position: relative;
+    letter-spacing: .5px;
+    display: none
+}
+
+.tab-icon {
+    width: 44px;
+    height: 13px;
+    background: url(https://cdn11.mei.com/images/tab_icon.gif) no-repeat 0 0;
+    top: -13px;
+    left: 424px;
+    position: absolute
+}
+
+.close-icon {
+    width: 15px;
+    height: 14px;
+    background: url(https://cdn11.mei.com/images/colorbox/close.gif) no-repeat 0 0;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    cursor: pointer
+}
+
+.stepBox {
+    padding: 10px 0;
+    background: #fff
+}
+
+.p-step {
+    padding: 20px 25px;
+    background: #fff
+}
+
+.p-step > h3 {
+    background: url(https://cdn11.mei.com/images/num_icon.gif) no-repeat 0 0;
+    padding-left: 28px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 25px
+}
+
+.p-step .step-num2 {
+    background: url(https://cdn11.mei.com/images/num_icon.gif) no-repeat 0 -24px
+}
+
+.p-step .step-num3 {
+    background: url(https://cdn11.mei.com/images/num_icon.gif) no-repeat 0 -50px
+}
+
+.p-step .step-num4 {
+    background: url(https://cdn11.mei.com/images/num_icon.gif) no-repeat 0 -75px
+}
+
+.p-step .step-num5 {
+    background: url(https://cdn11.mei.com/images/num_icon.gif) no-repeat 0 -100px
+}
+
+.p-fieldset {
+    color: #929292
+}
+
+.sceneImg {
+    background: url(https://cdn11.mei.com/images/scene.gif) no-repeat 0 10px;
+    width: 670px;
+    height: 64px;
+    padding-top: 10px
+}
+
+.p-info {
+    margin: 15px 0;
+    font-size: 14px
+}
+
+.p-info li {
+    line-height: 22px;
+    padding-left: 18px
+}
+
+.rma_address {
+    border: 1px dashed #929292;
+    width: 480px;
+    margin: 15px 0;
+    padding: 10px 25px
+}
+
+.p-fieldset > h5 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: -10px;
+    color: #000
+}
+
+.p-fieldset > p {
+    margin-left: 20px;
+    line-height: 22px
+}
+
+.content-hd h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .5px
+}
+
+.refund-detail, .refund-info {
+    width: 1000px;
+    height: auto;
+    margin: 10px auto 20px
+}
+
+.box-hd {
+    margin: 35px 0 5px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px
+}
+
+.selectBox {
+    padding: 20px 0 20px 20px;
+    width: 980px;
+    background: #eee;
+    overflow: hidden
+}
+
+.listTitle .itemName {
+    text-align: left;
+    width: 287px;
+    padding-left: 35px
+}
+
+.listContent .itemLeft {
+    width: 287px
+}
+
+.content_info {
+    text-align: left;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+    width: 165px
+}
+
+.listContent .itemChk {
+    width: 35px;
+    text-align: left
+}
+
+.refundChk {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 17px
+}
+
+.refundChk label {
+    position: absolute;
+    z-index: 1;
+    width: 18px;
+    height: 18px;
+    background: url(https://cdn11.mei.com/images/checkbox_icon.gif) no-repeat 0 0;
+    cursor: pointer;
+    text-indent: -999em;
+    top: 0;
+    left: 0
+}
+
+.refundChk .checked {
+    background-position: 0 -18px
+}
+
+.refundTips, .rmaTips {
+    margin: 55px auto 0;
+    color: #9e9e9e;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: .5px;
+    text-align: center
+}
+
+.rmaTips {
+    text-align: left
+}
+
+.statusBar02 {
+    width: 800px;
+    margin: 45px auto 15px;
+    background: url(https://cdn11.mei.com/images/statebar.jpg) no-repeat 0 0;
+    height: 26px;
+    text-indent: -999em
+}
+
+.refundStatus {
+    width: 800px;
+    margin: 0 auto 60px
+}
+
+.refundStatus li {
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    width: 160px;
+    line-height: 24px;
+    font-weight: bold
+}
+
+.item-info {
+    width: 340px;
+    float: left;
+    padding-right: 30px
+}
+
+.productPrice, .productCount {
+    font-size: 12px;
+    padding-top: 10px;
+    font-weight: normal
+}
+
+.productPrice span {
+    color: #909090;
+    padding-left: 5px
+}
+
+.reasonBox {
+    float: left;
+    width: 570px
+}
+
+.selectCategory {
+    float: left;
+    margin-left: 10px;
+    background: #fff;
+    height: 40px;
+    width: 275px;
+    position: relative
+}
+
+.s_categories {
+    height: 18px;
+    line-height: 18px;
+    position: absolute;
+    top: 10px;
+    left: 20px
+}
+
+.s_button {
+    background: url(https://cdn11.mei.com/images/icon_arrows_bottom.gif) no-repeat center center;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-indent: -999em;
+    width: 50px;
+    cursor: pointer
+}
+
+.selectCategory strong {
+    color: #9e9e9e;
+    font-weight: normal;
+    padding-left: 5px
+}
+
+.categoryList {
+    background: #fff;
+    box-shadow: 0 1px 6px #999;
+    height: auto;
+    width: 275px;
+    padding-bottom: 5px;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 3;
+    display: none
+}
+
+.selectClose {
+    height: 18px;
+    line-height: 18px;
+    padding-bottom: 5px;
+    position: relative;
+    width: 100%
+}
+
+.selectClose span {
+    background: url(https://cdn11.mei.com/images/icon_close2.png) no-repeat 0 0;
+    cursor: pointer;
+    display: block;
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    right: 10px;
+    text-indent: -999em;
+    top: 5px
+}
+
+.s_list {
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    margin: 0 auto;
+    max-height: 160px;
+    width: 265px;
+    height: auto
+}
+
+.s_ul li {
+    cursor: pointer;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 20px;
+    width: 100%;
+    font-size: 12px
+}
+
+.situation {
+    margin-top: 10px
+}
+
+#situationArea {
+    border: 0 none;
+    height: 130px;
+    width: 530px;
+    line-height: 18px;
+    padding: 15px;
+    resize: none;
+    margin-left: 10px;
+    font-weight: normal;
+    letter-spacing: .5px;
+    font-size: 14px
+}
+
+.t-right {
+    float: left;
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    width: 125px;
+    padding-right: 25px;
+    display: inline-block;
+    line-height: 30px
+}
+
+.t-left {
+    padding-left: 15px;
+    font-size: 12px;
+    color: #9e9e9e;
+    font-weight: normal;
+    *vertical-align: middle
+}
+
+.refund-btn, .creditCard {
+    display: inline-block;
+    height: 38px;
+    width: 138px;
+    border: 1px solid #d7d7d7 !important;
+    text-align: center;
+    line-height: 38px;
+    background: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    *zoom: 1;
+    *display: inline
+}
+
+.selectedIt {
+    border: 1px solid #000 !important
+}
+
+.rma-from > ul {
+    float: left;
+    width: 780px
+}
+
+.refund-tips {
+    color: #9e9e9e;
+    font-size: 12px;
+    line-height: 24px
+}
+
+.rmaPrice {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px
+}
+
+.verifyForm {
+    width: 640px;
+    float: left;
+    padding-left: 15px
+}
+
+.field {
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 10px
+}
+
+.field > label {
+    width: 85px;
+    text-align: right;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top
+}
+
+.field > input {
+    background: #fff;
+    border: 0 none;
+    height: 32px;
+    width: 280px;
+    line-height: 32px;
+    font-size: 12px;
+    padding: 0 10px
+}
+
+.left-btn {
+    float: left
+}
+
+.creditCard {
+    width: 108px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 5px
+}
+
+#RmaCountBox {
+    margin: 0 0 10px 10px;
+    height: 40px;
+    background: #fff;
+    line-height: 40px
+}
+
+#RmaCountBox .RmaText {
+    margin: 0 20px;
+    width: 56px;
+    height: 40px;
+    line-height: 40px;
+    float: left
+}
+
+.numberBox {
+    width: 108px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 24px;
+    float: left;
+    margin: 3px 15px 3px 0
+}
+
+.numberReduce, .numberIncrease, .qtyNumber {
+    color: #000;
+    background: #eee;
+    height: 34px;
+    width: 34px;
+    line-height: 34px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    float: left
+}
+
+.qtyNumber input {
+    float: left;
+    text-align: center;
+    width: 40px;
+    height: 34px;
+    line-height: 34px;
+    background: #fff;
+    border: 0 none;
+    font-size: 14px
+}
+
+.qtyNumber {
+    width: 40px
+}
+
+.numberReduceNone, .numberIncreaseNone {
+    color: #d7d7d7
+}
+
+.qtyTips {
+    float: left;
+    color: #9e9e9e
+}
+
+.detail-range {
+    width: 460px;
+    margin: 0 auto 20px;
+    position: relative
+}
+
+.received {
+    background-position: 0 -26px
+}
+
+.detail-range > h2, .detail-range2 > h2 {
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold
+}
+
+.detailBox {
+    border: 1px dashed #9e9e9e;
+    width: 418px;
+    margin: 30px auto 20px;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 2;
+    font-weight: bold
+}
+
+.sendTo {
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 10px;
+    font-weight: normal
+}
+
+.received-icon {
+    background: url(https://cdn11.mei.com/images/received_icon.gif) no-repeat 0 0;
+    width: 95px;
+    height: 95px;
+    position: absolute;
+    left: 410px;
+    top: 27px;
+    z-index: -1
+}
+
+.detail-range > p {
+    line-height: 22px;
+    text-align: center;
+    width: 100%
+}
+
+.gray {
+    color: #9e9e9e
+}
+
+.rma-tips {
+    font-size: 12px;
+    color: #999;
+    line-height: 18px;
+    margin-bottom: 10px;
+    font-weight: normal
+}
+
+.detail-range .wxtips {
+    width: 750px;
+    color: #909090;
+    margin: 0 auto 8px;
+    text-align: left
+}
+
+.detail-range .wxtips span {
+    color: #dd2828
+}
+
+.expressBox, .refundBox {
+    background: #eee;
+    padding: 30px;
+    text-align: center
+}
+
+.expressBox > h3 {
+    text-align: left;
+    font-size: 16px;
+    line-height: 42px;
+    font-weight: bold
+}
+
+.expressInput {
+    margin: 10px 0 0 0
+}
+
+.logistics-field {
+    height: 33px;
+    line-height: 33px;
+    margin-bottom: 10px
+}
+
+.logistics-field label {
+    float: left;
+    display: inline-block;
+    text-align: right;
+    width: 75px;
+    font-weight: bold
+}
+
+.logistics-field input {
+    height: 33px;
+    line-height: 33px;
+    width: 280px;
+    border: 0 none;
+    padding: 0 10px;
+    background: #fff;
+    float: left
+}
+
+.logisticsCompany {
+    background: #fff;
+    width: 300px;
+    height: 33px;
+    line-height: 33px;
+    float: left;
+    position: relative
+}
+
+.logistics_categories {
+    left: 15px;
+    height: 10px;
+    position: absolute;
+    height: 33px;
+    line-height: 33px;
+    font-weight: bold
+}
+
+.logistics_button {
+    background: url(https://cdn11.mei.com/images/icon_arrows_bottom.gif) no-repeat center center;
+    cursor: pointer;
+    height: 33px;
+    text-indent: -999em;
+    position: absolute;
+    width: 36px;
+    right: 0;
+    top: 0
+}
+
+.companyList {
+    background: #fff;
+    box-shadow: 0 1px 6px #999;
+    height: auto;
+    width: 300px;
+    padding-bottom: 5px;
+    position: absolute;
+    left: 0;
+    top: 34px;
+    z-index: 3;
+    display: none
+}
+
+.logistics_list {
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    margin: 0 auto;
+    max-height: 140px;
+    width: 290px;
+    height: auto;
+    text-align: left
+}
+
+.logistics-tip {
+    color: #dd2828;
+    float: left;
+    margin: 0 0 0 15px;
+    display: none
+}
+
+.pcdbox {
+    display: inline-block
+}
+
+.pcdbox .selectionconditions {
+    border: 1px solid #d7d7d7
+}
+
+.pcdbox .selectionconditions .selectcontent {
+    height: 20px;
+    line-height: 20px;
+    border-right: 1px solid #d7d7d7
+}
+
+.pcdbox .selectionconditions .selectbutton {
+    background-position: 8px 12px
+}
+
+.pcdbox .selectionconditions .selectlist {
+    top: 30px
+}
+
+.pcdbox .selectionconditions .selectlist .selectlist_bottom {
+    width: 263px;
+    height: auto;
+    max-height: 150px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative
+}
+
+.pcdbox .selectionconditions .selectlist .selectlist_bottom .select_ul li {
+    width: 100%;
+    height: 24px;
+    float: none;
+    line-height: 24px;
+    cursor: pointer;
+    padding-left: 20px;
+    margin: 0
+}
+
+.pcdbox .selectionconditions .selectlist .selectlist_bottom .select_ul li:hover {
+    background-color: #f2f2f2
+}
+
+.detail-range-new {
+    width: 1000px
+}
+
+.detail-range-new .received-icon {
+    left: 680px
+}
+
+.detail-range-new .detailBox p {
+    text-align: left
+}
+
+.companyListBox {
+    width: 441px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1)
+}
+
+.companyListBox .logistics_list {
+    width: 437px;
+    max-height: 96px;
+    margin: 0
+}
+
+.logisticsTab {
+    width: 100%;
+    margin-bottom: 16px
+}
+
+.logisticsTab li {
+    width: 84px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+    margin-right: 2px
+}
+
+.logisticsTab li span.current {
+    border-bottom: 2px solid #000
+}
+
+.s_ul_list {
+    display: none;
+    width: 100%;
+    max-height: 96px;
+    height: auto
+}
+
+.s_ul_list .s_ul li {
+    width: 84px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    float: left;
+    color: #666;
+    padding-left: 0;
+    background: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    margin: 0 2px 8px 0
+}
+
+.detail-panel {
+    margin: 20px auto;
+    text-align: center
+}
+
+.detail-panel > p {
+    font-size: 16px;
+    line-height: 42px
+}
+
+.unreceived-icon {
+    background: url(https://cdn11.mei.com/images/unreceived_icon.gif) no-repeat 0 0;
+    height: 95px;
+    width: 95px;
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    right: 358px
+}
+
+.detail-range2 {
+    margin: 0 auto;
+    position: relative;
+    padding: 30px 0;
+    text-align: center
+}
+
+.toPolicy {
+    text-decoration: underline;
+    cursor: pointer
+}
+
+.reapply {
+    text-align: center
+}
+
+.reapplyBtn {
+    width: 120px;
+    background: #eee;
+    color: #000;
+    font-size: 16px;
+    height: 38px;
+    line-height: 38px;
+    display: block
+}
+
+.delivered {
+    background-position: 0 -52px
+}
+
+.delivery-field {
+    height: 33px;
+    line-height: 33px;
+    margin-bottom: 10px
+}
+
+.delivery-field span {
+    text-align: right;
+    width: 75px;
+    float: left;
+    font-weight: bold
+}
+
+.delivery-field .delivery_info {
+    background: #d7d7d7;
+    width: 280px;
+    height: 23px;
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 23px;
+    float: left;
+    margin-left: 10px;
+    text-align: left
+}
+
+.approved {
+    background-position: 0 -78px
+}
+
+.detail-panel > .gray {
+    font-size: 14px
+}
+
+.approved-icon {
+    background: url(https://cdn11.mei.com/images/received_icon.gif) no-repeat 0 0;
+    height: 95px;
+    width: 95px;
+    position: absolute;
+    z-index: -1;
+    top: -14px;
+    right: 375px
+}
+
+.reject-icon {
+    background: url(https://cdn11.mei.com/images/unreceived_icon.gif) no-repeat 0 0;
+    height: 95px;
+    width: 95px;
+    position: absolute;
+    z-index: -1;
+    top: -14px;
+    right: 371px
+}
+
+.noticeBox {
+    width: 818px;
+    border: 1px solid #dd2828;
+    background: #fff;
+    color: #dd2828;
+    margin: 0 0 10px;
+    font-size: 14px;
+    position: relative;
+    display: none
+}
+
+.noticeContent {
+    margin: 8px 0 7px 20px;
+    padding: 0 0 0 29px;
+    background: url(https://cdn11.mei.com/images/customer/icon_notice.png) no-repeat;
+    height: 23px;
+    line-height: 23px
+}
+
+.closeBtn {
+    width: 13px;
+    height: 13px;
+    background: url(https://cdn11.mei.com/images/customer/icon_close.png) no-repeat;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    cursor: pointer
+}
+
+.allBrand {
+    width: 820px;
+    height: 63px;
+    line-height: 63px;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    text-align: center
+}
+
+.rmaPicBox {
+    margin: 20px 0 0 10px
+}
+
+.uploadTip {
+    color: #dd2828;
+    margin-left: 15px;
+    display: none
+}
+
+.rmaPicList li {
+    margin-top: 20px
+}
+
+.rmaPic {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    margin-right: 15px;
+    float: left;
+    position: relative
+}
+
+.rmaImgBox img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    border: 0;
+    overflow: hidden
+}
+
+.rmaPicMask {
+    width: 80px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.picBigBtn {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    font-size: 12px
+}
+
+.picBigBtn img {
+    margin: 32px 3px 0 0
+}
+
+.refundRmaPicBox .picBigBtn img {
+    margin: 0 3px 0 0
+}
+
+.maskPlane {
+    display: none
+}
+
+.rmaPic a.imgLink:hover .maskPlane {
+    display: block
+}
+
+.rmaInfo {
+    float: left;
+    position: relative;
+    background: #fff
+}
+
+.rmaInfoBox {
+    width: 350px;
+    height: 60px;
+    border: 0 none;
+    line-height: 18px;
+    padding: 10px;
+    letter-spacing: .5px;
+    resize: none;
+    font-size: 14px
+}
+
+.delInfoBtn {
+    float: left;
+    width: 78px;
+    height: 26px;
+    border: 1px solid #ccc;
+    line-height: 26px;
+    text-align: center;
+    margin: 20px 0 0 15px;
+    background: #fff;
+    cursor: pointer
+}
+
+.wordNumber {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: #ccc
+}
+
+.uploadPlane {
+    margin-top: 20px
+}
+
+.upLoadBtnBox {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    float: left
+}
+
+.upLoadBtn {
+    width: 80px;
+    height: 80px;
+    background: url(https://cdn11.mei.com/images/customer/addicon.png) no-repeat center center;
+    cursor: pointer
+}
+
+.picCount {
+    float: left;
+    margin: 65px 15px 0;
+    color: #909090
+}
+
+.picInfoTip {
+    float: left;
+    color: #dd2828;
+    font-size: 12px;
+    margin-top: 67px;
+    display: none
+}
+
+.uploadRule {
+    font-size: 12px;
+    color: #909090;
+    margin-top: 20px
+}
+
+.rmaPopUpPlane, .rmaPopUpPlane2 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    display: none
+}
+
+.rmaPopUp, .rmaPopUp2 {
+    width: 280px;
+    height: 148px;
+    margin: -74px auto 0;
+    background: #fff;
+    top: 50%;
+    position: relative
+}
+
+.rmaPopUp2 {
+    padding: 20px;
+    margin: -114px auto 0;
+    height: 128px
+}
+
+.rmaPopUp p {
+    text-align: center;
+    padding: 50px 0 30px
+}
+
+.rmaPopUp2 p {
+    text-align: center;
+    padding: 25px 0;
+    line-height: 20px
+}
+
+.rmaSubmitBox {
+    width: 180px;
+    height: 28px;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+.rmaTipsBox {
+    width: 220px;
+    height: 30px;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+.rmaSubmitBox span {
+    width: 78px;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 12px;
+    float: left;
+    background: #eee;
+    text-align: center;
+    cursor: pointer;
+    display: block
+}
+
+.rmaTipsBox a {
+    width: 98px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 12px;
+    float: left;
+    background: #eee;
+    text-align: center;
+    cursor: pointer;
+    display: block
+}
+
+.rmaSubmitBox .rmaSubmitOK, .rmaTipsBox .logisticsContinue {
+    background: #000;
+    color: #fff
+}
+
+.closeRmaPop, .closeRmaPop2 {
+    width: 40px;
+    height: 40px;
+    background: url(https://cdn11.mei.com/images/customer/close_icon_b.png) no-repeat center center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer
+}
+
+.refund-info .refundBox {
+    margin: 0
+}
+
+.refundBox p {
+    text-align: left
+}
+
+.refundBox .uploadPic {
+    font-weight: bold
+}
+
+.refundImgUl {
+    margin-top: 30px
+}
+
+.refundImgUl li {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-right: 15px
+}
+
+.refundImgUl li img {
+    width: 80px;
+    height: 80px
+}
+
+.cancel-detail {
+    width: 1000px;
+    min-height: 400px;
+    margin: 20px auto 0
+}
+
+.cancelStatusBar {
+    width: 800px;
+    height: 26px;
+    margin: 20px auto;
+    background: url(https://cdn11.mei.com/images/cancelbar.jpg) no-repeat;
+    text-indent: -9999em
+}
+
+.StatusBarText {
+    width: 800px;
+    margin: 0 auto
+}
+
+.StatusBarText li {
+    width: 33.333%;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+    text-align: center
+}
+
+.cancelTrackBox {
+    width: 1000px;
+    margin: 55px auto 200px
+}
+
+.cancelTrackTitle {
+    margin: 0 0 5px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px
+}
+
+.cancelTrackTitle h3 {
+    float: left;
+    font-size: 16px;
+    font-weight: bold
+}
+
+#myConfirmFailed .btn-confirm {
+    width: 140px;
+    height: 36px;
+    line-height: 36px
+}
+
+#myConfirmDelete .title, .myConfirmFailed .title {
+    text-align: left
+}
+
+#confirmStatusBox {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+    text-align: center;
+    margin: auto;
+    display: none
+}
+
+.confirmtipsPanel {
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    min-width: 141px;
+    width: auto;
+    padding: 0 10px;
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    font-size: 18px
+}
+
+.cancelApply {
+    background: url(https://cdn11.mei.com/images/cancelapply.jpg) no-repeat
+}
+
+.cancelApproved {
+    background: url(https://cdn11.mei.com/images/cancelapprove.jpg) no-repeat
+}
+
+.cancelCompleted {
+    background: url(https://cdn11.mei.com/images/cancelcomplete.jpg) no-repeat
+}
+
+.statusRefunded {
+    background-position: 0 -104px
+}
+
+.refundedBox {
+    padding: 137px 0 0;
+    line-height: 24px;
+    color: #9e9e9e;
+    text-align: center
+}
+
+.refundToCard {
+    padding: 88px 0 0
+}
+
+.refundedBox .title {
+    padding: 0 0 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000
+}
+
+.refundedBox .content {
+    min-height: 350px;
+    _height: 350px
+}
+
+.refundToCard .cardInfo {
+    padding: 17px 0 111px 398px;
+    text-align: left
+}
+
+.refundBack .memos {
+    padding: 118px 0 0
+}
+
+.linkRefundTime {
+    color: #000;
+    text-decoration: underline
+}
+
+.my_info_box {
+    width: 700px;
+    padding: 80px 60px
+}
+
+.my_info {
+    width: 100%;
+    background: #fff;
+    position: relative
+}
+
+.my_base_box {
+    width: 100%;
+    height: 320px;
+    border-bottom: 1px solid #eee
+}
+
+.switch_modify {
+    width: 40px;
+    height: 40px;
+    float: left;
+    text-indent: -1000em;
+    background: url(https://cdn11.mei.com/images/customer/btn_modify.png) center center no-repeat;
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    cursor: pointer
+}
+
+.my_face {
+    position: absolute;
+    left: 147px;
+    top: 115px
+}
+
+.my_face .user-info {
+    padding: 0
+}
+
+.user_avatar_mask_box {
+    display: none;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer
+}
+
+.user_avatar_mask {
+    width: 98px;
+    height: 98px;
+    border: 2px solid #838081;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    background: #000;
+    opacity: .6;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.user_avatar_mask_box span {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.my_base {
+    position: absolute;
+    left: 355px;
+    top: 110px
+}
+
+.my_base_field li {
+    width: 100%;
+    float: left;
+    margin: 0 0 10px
+}
+
+.my_base_field label, .my_base_field .modified, .my_base_field .modify {
+    float: left;
+    line-height: 30px
+}
+
+.my_base_field .modified {
+    font-weight: bold
+}
+
+.my_base_field .modify {
+    display: none
+}
+
+.my_base_field label {
+    color: #929292;
+    font-size: 16px
+}
+
+.my_base_field .modify label {
+    width: 19px;
+    text-align: center
+}
+
+.input_text {
+    padding: 0 10px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #d7d7d7
+}
+
+.my_base_field .selectionconditions {
+    width: 70px;
+    float: left;
+    border: 1px solid #d7d7d7
+}
+
+.my_base_field .selectionconditions .selectbutton {
+    background: url(https://cdn11.mei.com/images/icon_arrows_bottom_small.gif) center center no-repeat
+}
+
+.my_base_field .selectionconditions .selectcontent {
+    width: 32px;
+    padding: 0 5px 0 0;
+    border-right: 1px solid #d7d7d7;
+    left: 5px
+}
+
+.my_base_field .selectionconditions .selectlist .selectlist_bottom {
+    width: 263px;
+    height: auto;
+    max-height: 150px;
+    margin: auto
+}
+
+.my_base_field .selectionconditions .selectlist .selectlist_bottom {
+    width: 263px;
+    height: auto;
+    max-height: 150px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative
+}
+
+.my_base_field .selectionconditions .selectlist .selectlist_bottom .select_ul li {
+    width: 100%;
+    height: 24px;
+    float: none;
+    line-height: 24px;
+    cursor: pointer;
+    padding-left: 20px;
+    margin: 0
+}
+
+.my_base_field .selectionconditions .selectlist .selectlist_bottom .select_ul li:hover {
+    background-color: #f2f2f2
+}
+
+.w248 {
+    width: 248px
+}
+
+.w168 {
+    width: 168px
+}
+
+.w38 {
+    width: 38px;
+    text-align: center
+}
+
+.w18 {
+    width: 18px;
+    text-align: center
+}
+
+.mod_radio {
+    display: inline-block;
+    height: 30px;
+    margin: 0 10px 0 0;
+    padding: 0 12px;
+    line-height: 30px;
+    color: #000;
+    background-color: #eee;
+    cursor: pointer
+}
+
+.mod_radio_selected {
+    color: #fff;
+    background-color: #000
+}
+
+.save_area {
+    display: none
+}
+
+.save_area {
+    position: absolute;
+    right: 15px;
+    top: 10px
+}
+
+.save_area a, .save_area button {
+    display: inline-block;
+    padding: 10px;
+    color: #000;
+    line-height: 16px;
+    font-size: 14px;
+    border: 0;
+    background: 0;
+    cursor: pointer;
+    vertical-align: top
+}
+
+.safety {
+    padding: 50px 30px 25px
+}
+
+.safety_item {
+    width: 100%;
+    float: left;
+    min-height: 32px;
+    margin: 0 0 25px;
+    line-height: 32px;
+    font-size: 16px
+}
+
+.safety_item label, .current_status, .safety_info {
+    float: left
+}
+
+.safety_item label {
+    color: #929292
+}
+
+.current_status {
+    margin: 0 50px 0 0;
+    font-weight: bold
+}
+
+.unsafety {
+    color: #dd2828
+}
+
+.safety_info {
+    width: 310px;
+    color: #9e9e9e;
+    font-size: 14px;
+    font-weight: bold
+}
+
+.safety_item a {
+    width: 86px;
+    height: 32px;
+    float: right;
+    text-align: center;
+    line-height: 32px;
+    color: #000;
+    font-size: 14px;
+    background-color: #eee
+}
+
+.safety_item a.warning {
+    color: #fff;
+    background-color: #000
+}
+
+.perfection {
+    width: 100%;
+    height: 20px;
+    background: #d7d7d7
+}
+
+.percent {
+    height: 20px;
+    position: relative
+}
+
+.perfection span {
+    width: auto;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 8px;
+    color: #fff;
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.set_form {
+    padding: 100px 0 0
+}
+
+.set_form h1 {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold
+}
+
+.setinfo_form_box {
+    padding: 65px 0 0 215px
+}
+
+.field_item, .field_item label, .field_item input, .field_item p, .set_form_save_area, .field_item a {
+    float: left
+}
+
+.field_item {
+    margin: 0 0 38px;
+    position: relative
+}
+
+.field_item label {
+    width: 120px;
+    margin: 0 15px 0 0;
+    text-align: right;
+    line-height: 40px;
+    font-size: 16px
+}
+
+.field_item input {
+    width: 270px;
+    height: 38px;
+    padding: 0 14px;
+    line-height: 38px;
+    border: 1px solid #d7d7d7
+}
+
+.field_item input.code {
+    width: 130px
+}
+
+.field_item a {
+    width: 130px;
+    height: 40px;
+    margin: 0 10px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px
+}
+
+.field_item p {
+    height: 40px;
+    padding: 0 0 0 45px;
+    line-height: 40px;
+    color: #000;
+    font-size: 14px
+}
+
+.field_item p a {
+    width: auto;
+    float: none;
+    text-align: left;
+    font-size: 12px;
+    color: #9e9e9e
+}
+
+p.pass {
+    background: url(https://cdn11.mei.com/images/customer/icon_pass.png) 14px 10px no-repeat
+}
+
+p.error {
+    background: url(https://cdn11.mei.com/images/customer/icon_error.png) 14px 10px no-repeat
+}
+
+.form_tips {
+    padding: 0 0 0 55px;
+    font-size: 16px
+}
+
+.pwd_level {
+    display: none;
+    width: 300px;
+    height: 20px;
+    float: left;
+    clear: both;
+    margin: 0 0 0 135px;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    background-color: #eee
+}
+
+#pwdLevel {
+    display: block;
+    width: 100%;
+    height: 20px
+}
+
+.pwd_level_text {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.set_form_save_area {
+    width: 320px;
+    padding: 35px 0 0 135px
+}
+
+#setEmail .set_form_save_area, #setMobile .set_form_save_area {
+    padding: 16px 0 0 135px
+}
+
+#saveBtn {
+    width: 300px;
+    height: 38px;
+    float: left;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    background: #000;
+    border: 0;
+    cursor: pointer
+}
+
+.set_form_save_area p {
+    width: 100%;
+    float: left;
+    line-height: 60px;
+    text-align: center;
+    color: #9e9e9e;
+    font-size: 12px
+}
+
+.set_step {
+    padding: 110px 0 0
+}
+
+.step_text {
+    padding: 130px 0 0;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    background: url(https://cdn11.mei.com/images/customer/icon_setemail.png) center 0 no-repeat
+}
+
+.step_text strong {
+    display: block
+}
+
+.send_tips {
+    padding: 24px 0;
+    line-height: 24px;
+    text-align: center;
+    color: #9e9e9e;
+    font-size: 14px
+}
+
+.send_step_link {
+    padding: 60px 0;
+    text-align: center
+}
+
+.send_step_link a {
+    width: 145px;
+    height: 38px;
+    display: inline-block;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 16px
+}
+
+a.enabled {
+    color: #fff;
+    background: #000;
+    cursor: pointer
+}
+
+a.disabled {
+    color: #9e9e9e;
+    background: #eee;
+    cursor: default
+}
+
+.send_step_link p {
+    line-height: 60px;
+    text-align: center;
+    color: #9e9e9e;
+    font-size: 12px
+}
+
+#setEmailSendOk .send_tips, #setSMSSendOk .send_tips {
+    padding: 32px 0
+}
+
+#setEmailSendOk .send_step_link, #setSMSSendOk .send_step_link {
+    padding: 0
+}
+
+.coupon_panel {
+    padding: 30px 18px 0
+}
+
+.coupon_item {
+    width: 390px;
+    height: 184px;
+    float: left;
+    margin: 0 1px 30px;
+    color: #dcd2bb;
+    background-image: url(https://cdn11.mei.com/images/customer/coupon_bg.png);
+    background-position: 0 0;
+    background-repeat: no-repeat
+}
+
+.used {
+    background-position: 0 -185px
+}
+
+.expired {
+    background-position: 0 -370px
+}
+
+.coupon_amount_box {
+    width: 122px;
+    height: 184px;
+    float: left;
+    display: table
+}
+
+.coupon_amount {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px
+}
+
+.coupon_amount span {
+    display: block;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff
+}
+
+.coupon_amount strong {
+    color: #fff;
+    font-size: 32px;
+    font-family: Helvetica
+}
+
+.coupon_info_box {
+    width: 228px;
+    height: 184px;
+    float: left;
+    padding: 0 10px;
+    display: table
+}
+
+.coupon_info {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 20px;
+    font-size: 12px
+}
+
+.coupon_code {
+    padding: 0 0 20px
+}
+
+.coupon_info_item label {
+    width: 60px;
+    float: left
+}
+
+.coupon_info_item p {
+    width: 168px;
+    float: left
+}
+
+.coupon_countdown strong {
+    padding: 0 5px;
+    color: #fff;
+    font-size: 21px
+}
+
+.coupon_tips {
+    padding: 0 23px 24px;
+    line-height: 24px;
+    color: #9e9e9e;
+    font-size: 12px
+}
+
+.coupon_tips a {
+    text-decoration: underline;
+    color: #000
+}
+
+.expired, .expired strong, .expired .coupon_countdown strong {
+    color: #d7d7d7
+}
+
+.coupon_page .ui-page-wrap {
+    clear: both
+}
+
+.mei-pagination-theme {
+    float: right
+}
+
+.mei-pagination-theme li, .mei-pagination-theme li a, .mei-pagination-theme li span {
+    float: left;
+    width: 26px;
+    height: 26px;
+    text-align: center
+}
+
+.mei-pagination-theme li {
+    width: auto;
+    margin: 0 6px 0 0
+}
+
+.mei-pagination-theme li a {
+    color: #000;
+    background: #fff
+}
+
+.mei-pagination-theme li span {
+    color: #fff;
+    background: #000
+}
+
+.mei-pagination-theme .prev, .mei-pagination-theme .next {
+    text-indent: -1000em;
+    background: url(https://cdn11.mei.com/images/customer/pagerBtns.gif) 0 0 no-repeat
+}
+
+.mei-pagination-theme .prev {
+    background-position: 0 -52px
+}
+
+.mei-pagination-theme .disabled .prev {
+    background-position: 0 0
+}
+
+.mei-pagination-theme .next {
+    background-position: 0 -78px
+}
+
+.mei-pagination-theme .disabled .next {
+    background-position: 0 -26px
+}
+
+.mei-pagination-theme .ellipse {
+    width: 12px;
+    color: #000;
+    background: 0
+}
+
+.receiveCoupon, .coupon_nothing {
+    padding: 10px;
+    text-align: center
+}
+
+.my_address {
+    padding: 30px 0 0 30px
+}
+
+.my_address_form_box {
+    width: 760px;
+    margin: 0 0 20px;
+    background: #fff
+}
+
+.my_address_form_box h2 {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 0 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold
+}
+
+.my_address_modify {
+    width: 535px;
+    padding: 0 0 0 90px
+}
+
+.my_address_modify .field_item {
+    width: 100%;
+    margin: 0 0 10px
+}
+
+.my_address_modify input {
+    width: 370px
+}
+
+.my_address_modify .set_form_save_area {
+    padding: 0 0 10px 135px
+}
+
+.my_address_modify #saveBtn {
+    width: 400px
+}
+
+.position_center {
+    width: 400px;
+    padding: 0 0 0 135px;
+    text-align: center
+}
+
+.position_center input, .position_center label {
+    width: auto;
+    display: inline-block;
+    padding: 0 40px;
+    float: none;
+    margin: 0;
+    font-size: 14px;
+    text-align: left
+}
+
+#setDefault label {
+    background-image: url(https://cdn11.mei.com/images/customer/icon_checkbox.gif);
+    background-repeat: no-repeat;
+    background-position: 0 0
+}
+
+#setDefault label.current {
+    background-position: -40px -40px
+}
+
+.field_item input.input_cr {
+    width: auto;
+    height: auto
+}
+
+.my_address_item {
+    width: 365px;
+    height: 200px;
+    float: left;
+    margin: 0 30px 20px 0;
+    background: #fff;
+    position: relative
+}
+
+.address_default {
+    padding: 0 0 10px 20px;
+    line-height: 36px
+}
+
+.address_default span {
+    color: #9e9e9e;
+    font-size: 14px
+}
+
+.address_default a {
+    text-decoration: underline;
+    font-size: 14px;
+    cursor: pointer
+}
+
+.my_address_info {
+    padding: 0 20px;
+    line-height: 24px
+}
+
+.my_address_info span {
+    display: block
+}
+
+.address_recivername {
+    font-size: 18px;
+    font-weight: bold
+}
+
+.address_address {
+    width: 100%;
+    height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.btn_area {
+    position: absolute;
+    right: 10px;
+    top: 0
+}
+
+.btn_area a {
+    width: 36px;
+    height: 36px;
+    float: right;
+    text-indent: -1000em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer
+}
+
+a.del {
+    background-image: url(https://cdn11.mei.com/images/customer/btn_del.gif)
+}
+
+a.modify {
+    background-image: url(https://cdn11.mei.com/images/customer/btn_modify_address.gif)
+}
+
+.my_address_modify .selectionconditions {
+    height: 38px;
+    float: left;
+    margin: 0 12px 0 0;
+    border: 1px solid #d7d7d7
+}
+
+#setDistrict {
+    margin: 0
+}
+
+.my_address_modify .selectionconditions .selectcontent {
+    height: 28px;
+    line-height: 28px;
+    border-right: 1px solid #d7d7d7
+}
+
+.my_address_modify .selectionconditions .selectbutton {
+    background-position: 8px 15px
+}
+
+.my_address_modify .selectionconditions .selectlist {
+    top: 38px
+}
+
+.my_address_modify .selectionconditions .selectlist .selectlist_bottom {
+    width: 263px;
+    height: auto;
+    max-height: 150px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative
+}
+
+.my_address_modify .selectionconditions .selectlist .selectlist_bottom .select_ul li {
+    width: 100%;
+    height: 24px;
+    float: none;
+    line-height: 24px;
+    cursor: pointer;
+    padding-left: 20px;
+    margin: 0
+}
+
+.my_address_modify .selectionconditions .selectlist .selectlist_bottom .select_ul li:hover {
+    background-color: #f2f2f2
+}
+
+.new_address_prompt {
+    float: left;
+    clear: both;
+    line-height: 30px;
+    padding: 0 0 0 135px
+}
+
+.my_address_item .box2 {
+    width: 230px;
+    height: auto;
+    position: absolute;
+    top: 25px;
+    right: -88px;
+    z-index: 9
+}
+
+.my_address_item .box2 .box_content {
+    height: auto;
+    overflow: hidden;
+    text-align: center
+}
+
+.my_address_item .box2 .box_content .p1 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 20px
+}
+
+.my_address_item .box2 .box_content .p2 {
+    width: 100%;
+    height: 25px;
+    overflow: hidden;
+    position: relative
+}
+
+.my_address_item .box2 .box_content .p2 .button1 {
+    position: absolute;
+    left: 0
+}
+
+.my_address_item .box2 .box_content .p2 .button2 {
+    position: absolute;
+    right: 0
+}
+
+.o2oIcon, .trade-status span.o2oIcon {
+    width: 66px;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #dd2828;
+    color: #dd2828;
+    text-align: center;
+    padding: 0 5px;
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 10px
+}
+
+.status-o2o li {
+    width: 33.333%
+}
+
+.statusBar2 {
+    width: 800px;
+    margin: 20px auto;
+    height: 26px;
+    text-indent: -999em;
+    background: url(https://cdn11.mei.com/images/bar.png) no-repeat
+}
+
+.o2o_1 {
+    background: url(https://cdn11.mei.com/images/bar1.png) no-repeat
+}
+
+.o2o_2 {
+    background: url(https://cdn11.mei.com/images/bar2.png) no-repeat
+}
+
+.o2o_3 {
+    background: url(https://cdn11.mei.com/images/bar3.png) no-repeat
+}
+
+.trade-status .orderStatusInfo p {
+    float: left;
+    padding-right: 0
+}
+
+.trade-status .orderStatusInfo p.payAmount {
+    float: right
+}
+
+.trade-status p.orderAmount {
+    float: right;
+    padding-right: 0
+}
+
+.invoiceInfoBox {
+    margin-bottom: 30px
+}
+
+.applyBox {
+    width: 940px;
+    padding: 20px 30px;
+    background: #eee
+}
+
+.applyBox .title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold
+}
+
+.invoiceTab {
+    margin-bottom: 30px
+}
+
+.invoiceTab span {
+    font-size: 12px;
+    margin-right: 40px
+}
+
+.invoiceTab span input {
+    margin-right: 6px
+}
+
+.invoiceInfoBox .sum {
+    margin-bottom: 24px
+}
+
+.applyBox .title1 {
+    width: 84px;
+    text-align: right;
+    color: #666;
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 6px
+}
+
+.applyBox .title2 {
+    width: 60px;
+    text-align: right;
+    color: #666;
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 6px
+}
+
+.chooseTypeBox {
+    height: 35px;
+    margin-bottom: 15px
+}
+
+.chooseTypeBox .title1 {
+    line-height: 35px;
+    height: 35px
+}
+
+.chooseTypeBox .title1, .fpTypeBox, .fapiaoType {
+    float: left
+}
+
+.fpTypeBox span {
+    width: 60px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: inline-block;
+    border: 1px #ccc solid;
+    font-size: 14px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #000;
+    margin-right: 20px;
+    cursor: pointer
+}
+
+.fpTypeBox span.current {
+    background-color: #000;
+    color: #fff;
+    border: 0 none
+}
+
+.invoice_title {
+    margin-bottom: 15px
+}
+
+.invoice_title input {
+    width: 234px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    border: 0 none
+}
+
+.pidTips {
+    color: #666;
+    width: 16px;
+    height: 17px;
+    margin-left: 6px;
+    background: url(https://cdn11.mei.com/images/tip-icon.png) no-repeat;
+    padding-left: 20px;
+    cursor: pointer;
+    font-size: 12px
+}
+
+#invoicePopUp, #completedPop {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: none
+}
+
+.ivoicePopBox {
+    width: 460px;
+    height: 298px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -149px 0 0 -250px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    background: #fff;
+    font-size: 14px;
+    padding: 0 20px
+}
+
+.ivoicePopBox h5 {
+    text-align: left;
+    margin: 17px auto 27px;
+    font-weight: bold
+}
+
+.ivoicePopBox p {
+    text-align: left;
+    color: #666;
+    line-height: 24px
+}
+
+.ivoicePopBox .confirmPopBtn {
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    margin: 20px auto 0;
+    background: #000;
+    cursor: pointer
+}
+
+.closePopBtn {
+    width: 14px;
+    height: 14px;
+    background: url(https://cdn11.mei.com/images/close2_icon.png) no-repeat;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%
+}
+
+.applyTips {
+    margin: 5px 0 0 90px;
+    display: none
+}
+
+.applyTips2 {
+    margin: 5px 0 0 66px;
+    display: block
+}
+
+.addressBoxList li {
+    margin-bottom: 15px
+}
+
+.addressBoxList input {
+    height: 35px;
+    line-height: 35px;
+    padding-left: 15px;
+    width: 343px;
+    border: 0 none
+}
+
+.applyBox .new_address .title2 {
+    float: left;
+    height: 35px;
+    line-height: 35px
+}
+
+.applyBox .new_address .selectionconditions {
+    border: 0 none;
+    height: 35px;
+    line-height: 35px;
+    width: 118px;
+    margin-right: 2px !important
+}
+
+.applyBox .new_address .selectionconditions .selectcontent {
+    border-right: 1px solid #eee;
+    height: 24px;
+    line-height: 24px;
+    width: 75px;
+    left: 15px;
+    top: 6px
+}
+
+.applyBox .new_address .selectionconditions .selectbutton {
+    background: url(https://cdn11.mei.com/images/triangle6x4.jpg) no-repeat 11px 16px
+}
+
+.applyBox .defaultAddr {
+    margin-left: 65px;
+    height: 20px;
+    line-height: 25px
+}
+
+.applyBox .defaultAddr input {
+    width: 25px;
+    height: 25px;
+    line-height: 25px
+}
+
+.applyBox .address_button {
+    margin-left: 65px
+}
+
+.applyBox .address_button span {
+    width: 103px;
+    float: left;
+    margin-right: 10px
+}
+
+.applyBox .select_ul li {
+    height: 24px;
+    line-height: 24px;
+    margin: 0;
+    font-size: 12px;
+    cursor: pointer;
+    padding-left: 20px
+}
+
+.applyBox .select_ul li:hover {
+    background-color: #f2f2f2
+}
+
+.applyBox .selectionconditions .selectlist .selectlist_bottom {
+    width: 263px;
+    height: auto;
+    max-height: 150px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    width: 263px;
+    margin: 0 auto
+}
+
+.applyBox .tips1 {
+    color: #dd2828;
+    font-size: 12px;
+    margin-left: 90px
+}
+
+.completedPop {
+    width: 460px;
+    min-height: 433px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -230px 0 0 -230px
+}
+
+.completedIcon {
+    width: 124px;
+    height: 124px;
+    background: url(https://cdn11.mei.com/images/completed_icon.jpg) no-repeat;
+    margin: 30px 0 0 168px
+}
+
+.completedPop .text1 {
+    font-size: 20px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 6px
+}
+
+.completedPop .text2 {
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px
+}
+
+.invoiceInfoBox2 {
+    width: 406px;
+    height: 151px;
+    background: url(https://cdn11.mei.com/images/fpbg.jpg) no-repeat;
+    margin: 20px 0 16px 27px
+}
+
+.invoiceInfo {
+    padding: 25px 0 0 30px
+}
+
+.invoiceInfo .info1 {
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 15px
+}
+
+.invoiceInfo .info2 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-bottom: 15px;
+    color: #999
+}
+
+.invoiceInfo .info2 span {
+    color: #000
+}
+
+.invoiceBtnBox {
+    width: 406px;
+    margin: 0 auto 24px
+}
+
+.invoiceBtnBox a {
+    width: 190px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px
+}
+
+#backList {
+    float: left;
+    background: #eee
+}
+
+#goInvoiceInfo {
+    float: right;
+    background: #000;
+    color: #fff
+}
+
+#gsBox {
+    display: none
+}
+
+#grBox {
+    width: 406px;
+    height: 124px;
+    background: url(https://cdn11.mei.com/images/fpbg2.jpg) no-repeat;
+    margin: 20px 0 16px 27px;
+    display: none
+}
+
+.applyBox .select_address {
+    width: 100%;
+    height: auto
+}
+
+.applyBox .select_address .select_address_button {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 40px
+}
+
+.applyBox .select_address .select_address_button .button3 {
+    width: 103px;
+    float: left
+}
+
+.applyBox .select_address .select_address_li {
+    width: 305px;
+    height: 132px;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 15px
+}
+
+.applyBox .select_address .select_address_li .box_effect {
+    width: 300px;
+    height: auto;
+    overflow: visible;
+    padding: 5px 0 0 5px
+}
+
+.applyBox .select_address .select_address_li .box_effect_bg {
+    width: 300px;
+    padding: 0;
+    background-color: #e7e7e7;
+    overflow: visible
+}
+
+.applyBox .select_address .select_address_li .box_effect_content {
+    width: 300px;
+    padding: 0;
+    height: auto;
+    overflow: visible;
+    background-color: #fff;
+    border: 0 solid #e7e7e7;
+    position: relative;
+    bottom: 5px;
+    left: -5px
+}
+
+.applyBox .select_address .the_address {
+    width: 278px;
+    height: 90px;
+    padding: 10px;
+    padding-bottom: 0;
+    padding-top: 35px;
+    position: relative;
+    border: 1px solid #e7e7e7
+}
+
+.applyBox .select_address .the_address:hover {
+    border: 1px solid #000
+}
+
+.applyBox .select_address .the_address .box2 {
+    width: 230px;
+    height: auto;
+    position: absolute;
+    top: 25px;
+    right: -100px;
+    z-index: 9
+}
+
+.applyBox .select_address .the_address .box2 .box_content {
+    height: auto;
+    overflow: hidden;
+    text-align: center
+}
+
+.applyBox .select_address .the_address .box2 .box_content .p1 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 20px
+}
+
+.applyBox .select_address .the_address .box2 .box_content .p2 {
+    width: 100%;
+    height: 25px;
+    overflow: hidden;
+    position: relative
+}
+
+.applyBox .select_address .the_address .box2 .box_content .p2 .button1 {
+    position: absolute;
+    left: 0
+}
+
+.applyBox .select_address .the_address .box2 .box_content .p2 .button2 {
+    position: absolute;
+    right: 0
+}
+
+.applyBox .select_address .the_address .selected {
+    position: absolute;
+    right: 10px;
+    bottom: 10px
+}
+
+.applyBox .select_address .the_address .not_selected {
+    position: absolute;
+    right: 10px;
+    bottom: 10px
+}
+
+.applyBox .select_address .the_address .default_address {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1
+}
+
+.applyBox .select_address .the_address .set_as_default {
+    text-decoration: underline;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 1
+}
+
+.applyBox .select_address .the_address .the_address_top {
+    width: 278px;
+    height: 35px;
+    line-height: 35px;
+    position: absolute;
+    top: 0
+}
+
+.applyBox .select_address .the_address .the_address_top .edit {
+    text-decoration: underline;
+    float: right;
+    padding-right: 10px
+}
+
+.applyBox .select_address .the_address .the_address_top .delete {
+    display: block;
+    width: 11px;
+    height: 11px;
+    background: url(https://cdn11.mei.com/images/icon_close2.png) no-repeat;
+    float: right;
+    text-indent: -9999px;
+    position: relative;
+    top: 12px
+}
+
+.applyBox .select_address .the_address .the_address_bottom {
+    width: 278px;
+    height: auto;
+    overflow: hidden
+}
+
+.applyBox .select_address .the_address .the_address_bottom ul li {
+    line-height: 20px
+}
+
+.main:after, .grid:after, .brandSubscribe:after, .photos-thumb:after, .shoppingList:after, .listDetail:after, .clearfix:after {
+    display: block;
+    content: ".";
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    overflow: hidden
+}
+
+.main, .grid, .brandSubscribe, .photos-thumb, .shoppingList, .listDetail, .clearfix {
+    zoom: 1
+}
+
+#cboxLoadedContent {
+    padding: 24px 53px
+}
+
+.user-popBox .myConfirm .text2 {
+    height: 88px
+}

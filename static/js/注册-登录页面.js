@@ -104,47 +104,47 @@ $(function(){
 	})
 	$.idcode.setCode();
 	//点击立即注册，注册账号
-	$("#register").on("click",function(){
-		//注册(cookie存储)
-		var users = $.cookie("users") ? JSON.parse($.cookie("users")) : [];
-		//先判断是否存在该用户
-		for (var i=0; i<users.length; i++) {
-			if(users[i].name == $("#user").val() ) {
-				$("#again").show();
-				return;
-			}
-		}
-		//注册用户
-		var user = {
-			name: $("#user").val(),
-			pwd: $("#password").val()
-		}
-		users.push(user); 
-		$.cookie("users", JSON.stringify(users), {expires:22, path:"/"});
-		window.open("login.html");
-		console.log( $.cookie("users") );
-	})
+	// $("#register").on("click",function(){
+	// 	//注册(cookie存储)
+	// 	var users = $.cookie("users") ? JSON.parse($.cookie("users")) : [];
+	// 	//先判断是否存在该用户
+	// 	for (var i=0; i<users.length; i++) {
+	// 		if(users[i].name == $("#user").val() ) {
+	// 			$("#again").show();
+	// 			return;
+	// 		}
+	// 	}
+	// 	//注册用户
+	// 	var user = {
+	// 		name: $("#user").val(),
+	// 		pwd: $("#password").val()
+	// 	}
+	// 	users.push(user);
+	// 	$.cookie("users", JSON.stringify(users), {expires:22, path:"/"});
+	// 	window.open("login.html");
+	// 	console.log( $.cookie("users") );
+	// })
 	//会员登录
-	$("#login").click(function(){
-		var users = $.cookie("users");
-		console.log(users);
-		if (users) {
-			users = JSON.parse(users); //cookie中的所有注册过的用户
-			var isExists = false; //表示是否存在该用户
-			for (var i=0; i<users.length; i++) {
-				if ( users[i].name == $("#user").val() && users[i].pwd == $("#password").val() ) {
-					window.open("index.html");
-					$("#wrong").hide();
-					isExists = true;
-				}
-			}
-			if (!isExists) {
-				$("#wrong").show();
-			}
-			
-		}
-		else {
-			alert("不存在用户, 请先注册!");
-		}
-	})
+	// $("#login").click(function(){
+	// 	var users = $.cookie("users");
+	// 	console.log(users);
+	// 	if (users) {
+	// 		users = JSON.parse(users); //cookie中的所有注册过的用户
+	// 		var isExists = false; //表示是否存在该用户
+	// 		for (var i=0; i<users.length; i++) {
+	// 			if ( users[i].name == $("#user").val() && users[i].pwd == $("#password").val() ) {
+	// 				window.open("index.html");
+	// 				$("#wrong").hide();
+	// 				isExists = true;
+	// 			}
+	// 		}
+	// 		if (!isExists) {
+	// 			$("#wrong").show();
+	// 		}
+	//
+	// 	}
+	// 	else {
+	// 		alert("不存在用户, 请先注册!");
+	// 	}
+	// })
 })

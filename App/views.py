@@ -79,6 +79,16 @@ def goods(request):
 
 
 def cart(request):
-    return render(request, 'cart.html')
+    tel = request.COOKIES.get('tel')
+    users = User.objects.filter(tel=tel)
+    if users.exists():
+        user = users.first()
+        return render(request, 'cart.html', context={'tel': user.tel})
+
+    else:
+        return render(request, 'cart.html')
 
 
+
+def cart2(request):
+    return render(request, 'cart2.html')

@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 	<head>
@@ -15,11 +16,25 @@
 		<div class="login">
 			<div class="header">
 				<ul class="header_left">
-					<li><img src="../static/img/zhuceyouli.gif"/><a href="{% url 'App:register' %}" >注册有礼</a></li>
-					<li>|</li>
-					<li><a href="{% url 'App:login' %}" >登录</a></li>
-					<li>|</li>
-					<li><a href="{% url 'App:login' %}" >收藏</a></li>
+					{% if tel %}
+						<li>
+							<img src="{% static 'img/zhuceyouli.gif' %}">
+							<a href="{% url 'App:register' %}" target="_blank">{{ tel }}</a>
+						</li>
+						<li>|</li>
+						<li><a href="/quit/" target="_blank"> 退出 </a></li>
+						<li>|</li>
+					{% else %}
+						<li>
+							<img src="{% static 'img/zhuceyouli.gif' %}">
+							<a href="{% url 'App:register' %}" target="_blank">注册有礼</a>
+						</li>
+						<li>|</li>
+						<li><a href="{% url 'App:login' %}" target="_blank">登录</a></li>
+						<li>|</li>
+					{% endif %}
+
+					<li><a href="{% url 'App:login' %}" target="_blank">收藏</a></li>
 				</ul>
 				<ul class="header_right">
 					<li><a href="#" >在线咨询</a></li>

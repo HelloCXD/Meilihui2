@@ -1,0 +1,39 @@
+#commentsDisabled {
+    width: 360px;
+    height: 292px;
+    background: #fff
+}
+
+.comments-disabled-tips {
+    padding: 55px 89px 0
+}
+
+.comments-disabled-tips p {
+    color: #666;
+    font-size: 14px;
+    line-height: 22px
+}
+
+.comments-disabled-tips div.qrcode {
+    width: 100%;
+    margin: 14px 0 20px;
+    text-align: center
+}
+
+.comments-disabled-tips div.qrcode img {
+    display: block;
+    margin: 0 auto;
+    padding: 0
+}
+
+.comments-disabled-tips a.to_close {
+    width: 140px;
+    height: 36px;
+    float: left;
+    margin: 0 0 0 21px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    color: #fff;
+    background: #000
+}
