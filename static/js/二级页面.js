@@ -46,16 +46,18 @@ $(function(){
 		}
 	})
 	//单品
-	$.get("json/商品列表.json",function(data){
+	$.get("/static/json/商品列表.json",function(data){
+		console.log(1)
 		for(var n = 0;n < data.length;n++){
 			var obj = data[n];
 			var product = $("<div class='product' id=" + obj.id + "></div>");
 			var product_img = $("<div class='product_img'></div>");
-			var a = $("<a href='#'></a>");
+			var a = $("<a href='/goods/'></a>");
 			var product_label = $("<div class='product_label'>" + obj.buyer + "</div>");
 			var img1 = $("<img src=" + obj.src1 + " title=" + obj.title + " class='img_first'/>");
 			var img2 = $("<img src=" + obj.src2 + " title=" + obj.title + " />");
 			var img3 = $("<img src=" + obj.src3 + " title=" + obj.title + " />");
+			// console.log(obj.src1)
 			if(obj.buyer == undefined){
 				a.append(img1,img2,img3);
 			}else{
@@ -63,8 +65,8 @@ $(function(){
 			}
 			product_img.append(a);
 			var product_content = $("<div class='product_content'></div>");
-			var brand_name = $("<p><a href='#'>" + obj.name + "</a></p>");
-			var goods_name = $("<p><a href='#'>" + obj.title + "</a></p>");
+			var brand_name = $("<p><a href='/goods/'>" + obj.name + "</a></p>");
+			var goods_name = $("<p><a href='/goods/'>" + obj.title + "</a></p>");
 			var price = $("<p><span>" + obj.price + "</span><span>" + obj.original_price + "</span></p>");
 			product_content.append(brand_name,goods_name,price);
 			var product_pic = $("<div class='product_pic'></div>");

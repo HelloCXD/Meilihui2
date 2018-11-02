@@ -35,6 +35,7 @@
 	},
 	{
 		"id" : "product3",
+		"buyer" : "买手推荐",
 		"src1" : "img/product3_1_b.jpg",
 		"src2" : "img/product3_2_b.jpg",
 		"src3" : "img/product3_3_b.jpg",
@@ -51,6 +52,7 @@
 	},
 	{
 		"id" : "product4",
+		"buyer" : "买手推荐",
 		"src1" : "img/product4_1_b.jpg",
 		"src2" : "img/product4_2_b.jpg",
 		"src3" : "img/product4_3_b.jpg",
@@ -67,6 +69,7 @@
 	},
 	{
 		"id" : "product5",
+		"buyer" : "买手推荐",
 		"src1" : "img/product4_1_b.jpg",
 		"src2" : "img/product4_2_b.jpg",
 		"src3" : "img/product4_3_b.jpg",
@@ -117,6 +120,7 @@
 	},
 	{
 		"id" : "product8",
+		"buyer" : "买手推荐",
 		"src1" : "img/product3_1_b.jpg",
 		"src2" : "img/product3_2_b.jpg",
 		"src3" : "img/product3_3_b.jpg",

@@ -65,7 +65,7 @@ $(function(){
 	}
 	//初始显示
 	var week = $(".tab ul li");
-	$.get("json/活动即将开始1.json",function(data){
+	$.get("/static/json/活动即将开始1.json",function(data){
 		brands(data);
 	})
 	week.eq(0).addClass("back");
@@ -75,8 +75,10 @@ $(function(){
 			$(".brand").remove();
 			var index =$(this).index();
 			$(this).addClass("back").siblings().removeClass();
-			var jSon = "json/活动即将开始" + (index + 1) + ".json";
+			var jSon = "/static/json/活动即将开始" + (index + 1) + ".json";
+			// console.log(2)
 			$.get(jSon,function(data){
+				// console.log(3)
 				brands(data);
 			})
 		})
