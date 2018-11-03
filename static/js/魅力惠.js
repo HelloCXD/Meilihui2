@@ -13,20 +13,20 @@ $(function(){
 
 	}
 	//今日新上轮播图
-	$(".goods_lun a").first().clone().appendTo(".goods_lun");
-	var size = $(".goods_lun a").length;
-	var i = 0;
-	var timer = setInterval(function(){
-		move();
-		i++;
-	},2000)
-	function move(){
-		if(i >= size){
-			$(".goods_lun").css("left",0);
-			i = 1;
-		}
-		$(".goods_lun").stop().animate({left: -i*320},1000)
-	}
+	// $(".goods_lun a").first().clone().appendTo(".goods_lun");
+	// var size = $(".goods_lun a").length;
+	// var i = 0;
+	// var timer = setInterval(function(){
+	// 	move();
+	// 	i++;
+	// },2000)
+	// function move(){
+	// 	if(i >= size){
+	// 		$(".goods_lun").css("left",0);
+	// 		i = 1;
+	// 	}
+	// 	$(".goods_lun").stop().animate({left: -i*320},1000)
+	// }
 	//活动即将开始，json传值
 	function brands(data){
 		for(var i = 0;i < data.length;i++){

@@ -75,10 +75,12 @@ $(function(){
 			var index3 = $("<li><img src=" + obj.index3 + "</li></ul>");
 			product_pic.append(index1,index2,index3);
 			product.append(product_img,product_content,product_pic);
-			product.appendTo($(".contentDiv"));	
+			product.appendTo($(".contentDiv"));
+			console.log(2)
 		}
 		//单品展示效果
 		for(var j = 0;j < $(".product").length;j++){
+			console.log(3)
 			$(".product").eq(j).find(".product_img").on("mouseenter",function(){
 				$(this).siblings(".product_content").hide();
 				$(this).siblings(".product_pic").show();
@@ -103,7 +105,7 @@ $(function(){
 			users.push(user);
 			$.cookie("products",JSON.stringify(users),{expires:100,path:"/"});
 			evt.preventDefault();
-			window.open("goods.html");
+			window.open("/goods/");
 		})
 		
 	})

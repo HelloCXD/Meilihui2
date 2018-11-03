@@ -11,7 +11,7 @@ $(function(){
 	//商品信息传入
 	var good = $.cookie("goods");
 	if(good){good = JSON.parse(good);}
-	$.get("json/商品详情.json",function(data){
+	$.get("/static/json/商品详情.json",function(data){
 		for(var i = 0;i < data.length;i++){
 			var obj = data[i];
 			for(var n = 0;n < good.length;n++){
@@ -21,7 +21,7 @@ $(function(){
 					var ul = $("<ul class='ul'></ul>");
 					var list_content_first = $("<li class='list_content_first'></li>");
 					var list_img = $("<p class='list_img'></p>");
-					var list_img_a = $("<a href='goods.html'></a>");
+					var list_img_a = $("<a href='/goods/'></a>");
 					var a_img = $("<img src=" + obj.index1 + " title=" + obj.title + " id=" + obj.id + " class='_img'/>");
 					a_img.appendTo(list_img_a);
 					list_img_a.appendTo(list_img);
@@ -46,7 +46,7 @@ $(function(){
 					li_three.append(number);
 					var li_four = $("<li></li>");
 					var li_five = $("<li class='price1'>￥<span>" + obj.pri*good[n].num + "</span></li>");
-					var li_six = $("<li><img src='img/no_shopping.png' class='del' /></li>");
+					var li_six = $("<li><img src='/static/img/no_shopping.png' class='del' /></li>");
 					ul.append(list_content_first,li_two,li_three,li_four,li_five,li_six);
 					$(".list_content").append(ul);
 				}
@@ -69,9 +69,9 @@ $(function(){
 					}
 				}
 				if($(".ul").eq(x).find(".num").html() > 1){
-					$(".ul").eq(x).find(".reduce").css("background","url(img/reduce.gif)");
+					$(".ul").eq(x).find(".reduce").css("background","url(/static/img/reduce.gif)");
 				}else{
-					$(".ul").eq(x).find(".reduce").css("background","url(img/reduce_none.gif)");
+					$(".ul").eq(x).find(".reduce").css("background","url(/static/img/reduce_none.gif)");
 				}
 				total();
 				var sum1 = $(".sum").html()*1 + 1;
@@ -96,9 +96,9 @@ $(function(){
 				}
 				//单品数量“-”号颜色改变
 				if($(".ul").eq(x).find(".num").html() > 1){
-					$(".ul").eq(x).find(".reduce").css("background","url(img/reduce.gif)");
+					$(".ul").eq(x).find(".reduce").css("background","url(/static/img/reduce.gif)");
 				}else{
-					$(".ul").eq(x).find(".reduce").css("background","url(img/reduce_none.gif)");
+					$(".ul").eq(x).find(".reduce").css("background","url(/static/img/reduce_none.gif)");
 				}
 				//总价
 				total();
@@ -116,7 +116,7 @@ $(function(){
 			
 	})
 	$(".btn2").on("click",function(){
-		window.open("index.html");
+		window.open("/index/");
 	})
 	$(".btn3").on("click",function(){
 		alert("结算成功，欢迎下次光临");
@@ -124,9 +124,9 @@ $(function(){
 	function color(){
 		for(var x = 0;x < $(".ul").length;x++){
 			if($(".ul").eq(x).find(".num").html() > 1){
-				$(".ul").eq(x).find(".reduce").css("background","url(img/reduce.gif)");
+				$(".ul").eq(x).find(".reduce").css("background","url(/static/img/reduce.gif)");
 			}else{
-				$(".ul").eq(x).find(".reduce").css("background","url(img/reduce_none.gif)");
+				$(".ul").eq(x).find(".reduce").css("background","url(/static/img/reduce_none.gif)");
 			}
 		}
 	}

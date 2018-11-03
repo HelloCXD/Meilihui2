@@ -7,18 +7,12 @@
     <list default="true" id="1d636fad-f92c-4be1-a3ad-8d9fc795290c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django02/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django02/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/test1.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/test1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/js/二级页面.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/二级页面.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/魅力惠.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/魅力惠.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/json/商品列表.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/json/商品列表.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/商品详情.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/商品详情.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/购物袋.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/购物袋.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/json/商品详情.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/json/商品详情.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/json/活动即将开始1.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/json/活动即将开始1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/json/活动即将开始2.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/json/活动即将开始2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/json/活动即将开始3.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/json/活动即将开始3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/json/活动即将开始4.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/json/活动即将开始4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/json/活动即将开始5.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/json/活动即将开始5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/goods.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/goods.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,28 +57,31 @@
     <session id="299828217">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.121" value="1" />
           <entry key="project.open.time.26" value="1" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.49" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.71" value="1" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="App_user" value="5" />
           <entry key="css" value="6" />
-          <entry key="gif" value="1" />
-          <entry key="html" value="20" />
-          <entry key="jpg" value="23" />
-          <entry key="js" value="8" />
-          <entry key="json" value="6" />
-          <entry key="png" value="1" />
-          <entry key="py" value="14" />
+          <entry key="gif" value="3" />
+          <entry key="html" value="24" />
+          <entry key="jpg" value="25" />
+          <entry key="js" value="12" />
+          <entry key="json" value="8" />
+          <entry key="png" value="2" />
+          <entry key="py" value="15" />
           <entry key="sql" value="1" />
           <entry key="txt" value="2" />
         </counts>
@@ -93,81 +90,51 @@
         <counts>
           <entry key="CSS" value="6" />
           <entry key="Database Element" value="5" />
-          <entry key="HTML" value="20" />
-          <entry key="Image" value="25" />
-          <entry key="JSON" value="6" />
-          <entry key="JavaScript" value="8" />
+          <entry key="HTML" value="24" />
+          <entry key="Image" value="30" />
+          <entry key="JSON" value="8" />
+          <entry key="JavaScript" value="12" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="14" />
+          <entry key="Python" value="15" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="3" />
-          <entry key="html" value="1383" />
-          <entry key="js" value="308" />
-          <entry key="py" value="1611" />
+          <entry key="html" value="1404" />
+          <entry key="js" value="433" />
+          <entry key="py" value="1618" />
           <entry key="txt" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="HTML" value="1383" />
-          <entry key="JavaScript" value="308" />
+          <entry key="HTML" value="1404" />
+          <entry key="JavaScript" value="433" />
           <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Python" value="1611" />
+          <entry key="Python" value="1618" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-66">
-              <caret line="300" column="25" selection-start-line="300" selection-start-column="25" selection-end-line="300" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/js/二级页面.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="49" column="22" lean-forward="true" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/魅力惠.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="-154">
+              <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/json/商品列表.json">
+        <entry file="file://$PROJECT_DIR$/templates/goods.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="374">
+              <caret line="224" column="40" lean-forward="true" selection-start-line="224" selection-start-column="40" selection-end-line="224" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -175,14 +142,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10609">
-              <caret line="717" column="53" selection-start-line="717" selection-start-column="53" selection-end-line="717" selection-end-column="53" />
+            <state relative-caret-position="256">
+              <caret line="288" column="36" lean-forward="true" selection-start-line="288" selection-start-column="36" selection-end-line="288" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#li#2;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/cart.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="314" column="35" selection-start-line="314" selection-start-column="32" selection-end-line="314" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/购物袋.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="144" column="51" lean-forward="true" selection-start-line="144" selection-start-column="51" selection-end-line="144" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/img/reduce_none.gif">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/img/reduce.gif">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/img/no_shopping.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -206,11 +206,18 @@
       <find>注册有</find>
       <find>&quot;'static/img</find>
       <find>&quot;'img</find>
+      <find>&quot;img</find>
+      <find>reduce</find>
+      <find>add</find>
+      <find>btn</find>
+      <find>del</find>
+      <find>goods_photo</find>
     </findStrings>
     <replaceStrings>
       <replace>Meilihui</replace>
       <replace>django02</replace>
       <replace>&quot;'/static/img</replace>
+      <replace>&quot;/static/img</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -220,10 +227,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Meilihui/settings.py" />
-        <option value="$PROJECT_DIR$/static/js/test1.js" />
         <option value="$PROJECT_DIR$/templates/魅力惠.html" />
         <option value="$PROJECT_DIR$/templates/meilihui.html" />
-        <option value="$PROJECT_DIR$/templates/goods.html" />
         <option value="$PROJECT_DIR$/django02/urls.py" />
         <option value="$PROJECT_DIR$/django02/__init__.py" />
         <option value="$PROJECT_DIR$/App/models.py" />
@@ -242,14 +247,19 @@
         <option value="$PROJECT_DIR$/django02/settings.py" />
         <option value="$PROJECT_DIR$/templates/index2.html" />
         <option value="$PROJECT_DIR$/static/json/商品列表.json" />
-        <option value="$PROJECT_DIR$/App/views.py" />
         <option value="$PROJECT_DIR$/static/json/活动即将开始1.json" />
         <option value="$PROJECT_DIR$/static/json/活动即将开始2.json" />
         <option value="$PROJECT_DIR$/static/json/活动即将开始3.json" />
         <option value="$PROJECT_DIR$/static/json/活动即将开始4.json" />
         <option value="$PROJECT_DIR$/static/json/活动即将开始5.json" />
         <option value="$PROJECT_DIR$/static/js/魅力惠.js" />
+        <option value="$PROJECT_DIR$/App/views.py" />
         <option value="$PROJECT_DIR$/static/js/二级页面.js" />
+        <option value="$PROJECT_DIR$/static/json/商品详情.json" />
+        <option value="$PROJECT_DIR$/static/js/商品详情.js" />
+        <option value="$PROJECT_DIR$/templates/goods.html" />
+        <option value="$PROJECT_DIR$/static/js/购物袋.js" />
+        <option value="$PROJECT_DIR$/static/js/test1.js" />
       </list>
     </option>
   </component>
@@ -259,11 +269,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="439" />
-    <option name="y" value="83" />
-    <option name="width" value="1440" />
-    <option name="height" value="849" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="81" />
+    <option name="y" value="46" />
+    <option name="width" value="1599" />
+    <option name="height" value="857" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -273,7 +283,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -313,6 +322,12 @@
               <item name="Meilihui2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Meilihui2" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Meilihui2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Meilihui2" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -330,6 +345,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -337,7 +353,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AXF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
@@ -393,10 +409,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1615" height="1054" extended-state="6" />
+    <frame x="81" y="46" width="1599" height="857" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15041427" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16033484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -410,7 +426,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50031865" side_tool="true" weight="0.2935657" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49968132" visible="true" weight="0.23650108" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49968132" visible="true" weight="0.19478738" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.24347825" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -427,55 +443,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://4ab73aa0-7237-4376-afa8-ec1f8040c512/schema/meilihui/table/App_user" />
-    <entry file="file://$PROJECT_DIR$/App/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <marker date="1540899613910" expanded="true" signature="82:87" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4ab73aa0-7237-4376-afa8-ec1f8040c512/schema/meilihui/table/App_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4ab73aa0-7237-4376-afa8-ec1f8040c512/schema/meilihui/table/App_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4ab73aa0-7237-4376-afa8-ec1f8040c512/schema/meilihui/table/App_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4ab73aa0-7237-4376-afa8-ec1f8040c512/schema/meilihui/table/App_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirment.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/注册-登录页面.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -515,164 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="65" column="51" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="51" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#5974#5998#0" expanded="true" />
-            <element signature="e#6432#6453#0" expanded="true" />
-            <element signature="e#8549#8572#0" expanded="true" />
-            <element signature="e#8717#8738#0" expanded="true" />
-            <element signature="e#9259#9284#0" expanded="true" />
-            <element signature="e#9650#9674#0" expanded="true" />
-            <element signature="e#9679#9685#0" expanded="true" />
-            <element signature="e#11545#11564#0" expanded="true" />
-            <element signature="e#11806#11829#0" expanded="true" />
-            <element signature="e#12190#12209#0" expanded="true" />
-            <element signature="e#12311#12317#0" expanded="true" />
-            <element signature="e#12480#12499#0" expanded="true" />
-            <element signature="e#12601#12607#0" expanded="true" />
-            <element signature="e#12769#12788#0" expanded="true" />
-            <element signature="e#12890#12896#0" expanded="true" />
-            <element signature="e#13058#13077#0" expanded="true" />
-            <element signature="e#13179#13185#0" expanded="true" />
-            <element signature="e#13347#13366#0" expanded="true" />
-            <element signature="e#13468#13474#0" expanded="true" />
-            <element signature="e#13636#13655#0" expanded="true" />
-            <element signature="e#13759#13765#0" expanded="true" />
-            <element signature="e#13930#13949#0" expanded="true" />
-            <element signature="e#14055#14061#0" expanded="true" />
-            <element signature="e#14227#14246#0" expanded="true" />
-            <element signature="e#14358#14364#0" expanded="true" />
-            <element signature="e#14883#14902#0" expanded="true" />
-            <element signature="e#15135#15154#0" expanded="true" />
-            <element signature="e#15386#15405#0" expanded="true" />
-            <element signature="e#15646#15665#0" expanded="true" />
-            <element signature="e#15907#15926#0" expanded="true" />
-            <element signature="e#16163#16182#0" expanded="true" />
-            <element signature="e#16427#16446#0" expanded="true" />
-            <element signature="e#17073#17096#0" expanded="true" />
-            <element signature="e#17455#17474#0" expanded="true" />
-            <element signature="e#17577#17583#0" expanded="true" />
-            <element signature="e#17747#17766#0" expanded="true" />
-            <element signature="e#17869#17875#0" expanded="true" />
-            <element signature="e#18039#18058#0" expanded="true" />
-            <element signature="e#18167#18173#0" expanded="true" />
-            <element signature="e#18338#18357#0" expanded="true" />
-            <element signature="e#18471#18477#0" expanded="true" />
-            <element signature="e#18642#18661#0" expanded="true" />
-            <element signature="e#18764#18770#0" expanded="true" />
-            <element signature="e#18935#18954#0" expanded="true" />
-            <element signature="e#19058#19064#0" expanded="true" />
-            <element signature="e#19225#19244#0" expanded="true" />
-            <element signature="e#19355#19361#0" expanded="true" />
-            <element signature="e#19525#19544#0" expanded="true" />
-            <element signature="e#19655#19661#0" expanded="true" />
-            <element signature="e#20175#20194#0" expanded="true" />
-            <element signature="e#20425#20444#0" expanded="true" />
-            <element signature="e#20681#20700#0" expanded="true" />
-            <element signature="e#20937#20956#0" expanded="true" />
-            <element signature="e#21197#21216#0" expanded="true" />
-            <element signature="e#21454#21473#0" expanded="true" />
-            <element signature="e#21716#21735#0" expanded="true" />
-            <element signature="e#22360#22383#0" expanded="true" />
-            <element signature="e#22748#22767#0" expanded="true" />
-            <element signature="e#22868#22874#0" expanded="true" />
-            <element signature="e#23044#23063#0" expanded="true" />
-            <element signature="e#23166#23172#0" expanded="true" />
-            <element signature="e#23340#23359#0" expanded="true" />
-            <element signature="e#23477#23483#0" expanded="true" />
-            <element signature="e#23653#23672#0" expanded="true" />
-            <element signature="e#23773#23779#0" expanded="true" />
-            <element signature="e#23953#23972#0" expanded="true" />
-            <element signature="e#24075#24081#0" expanded="true" />
-            <element signature="e#24252#24271#0" expanded="true" />
-            <element signature="e#24385#24391#0" expanded="true" />
-            <element signature="e#24561#24580#0" expanded="true" />
-            <element signature="e#24683#24689#0" expanded="true" />
-            <element signature="e#24857#24876#0" expanded="true" />
-            <element signature="e#24981#24987#0" expanded="true" />
-            <element signature="e#25516#25535#0" expanded="true" />
-            <element signature="e#25773#25792#0" expanded="true" />
-            <element signature="e#26031#26050#0" expanded="true" />
-            <element signature="e#26291#26310#0" expanded="true" />
-            <element signature="e#26556#26575#0" expanded="true" />
-            <element signature="e#26811#26830#0" expanded="true" />
-            <element signature="e#27078#27097#0" expanded="true" />
-            <element signature="e#27347#27366#0" expanded="true" />
-            <element signature="e#28099#28122#0" expanded="true" />
-            <element signature="e#28487#28506#0" expanded="true" />
-            <element signature="e#28609#28615#0" expanded="true" />
-            <element signature="e#28791#28810#0" expanded="true" />
-            <element signature="e#28925#28931#0" expanded="true" />
-            <element signature="e#29100#29119#0" expanded="true" />
-            <element signature="e#29231#29237#0" expanded="true" />
-            <element signature="e#29406#29425#0" expanded="true" />
-            <element signature="e#29527#29533#0" expanded="true" />
-            <element signature="e#29710#29729#0" expanded="true" />
-            <element signature="e#29841#29847#0" expanded="true" />
-            <element signature="e#30017#30036#0" expanded="true" />
-            <element signature="e#30143#30149#0" expanded="true" />
-            <element signature="e#30326#30345#0" expanded="true" />
-            <element signature="e#30449#30455#0" expanded="true" />
-            <element signature="e#30636#30655#0" expanded="true" />
-            <element signature="e#30761#30767#0" expanded="true" />
-            <element signature="e#31301#31320#0" expanded="true" />
-            <element signature="e#31556#31575#0" expanded="true" />
-            <element signature="e#31822#31841#0" expanded="true" />
-            <element signature="e#32090#32109#0" expanded="true" />
-            <element signature="e#32345#32364#0" expanded="true" />
-            <element signature="e#32608#32627#0" expanded="true" />
-            <element signature="e#32865#32884#0" expanded="true" />
-            <element signature="e#33139#33158#0" expanded="true" />
-            <element signature="e#33895#33918#0" expanded="true" />
-            <element signature="e#34278#34297#0" expanded="true" />
-            <element signature="e#34404#34410#0" expanded="true" />
-            <element signature="e#34574#34593#0" expanded="true" />
-            <element signature="e#34700#34706#0" expanded="true" />
-            <element signature="e#34870#34889#0" expanded="true" />
-            <element signature="e#34994#35000#0" expanded="true" />
-            <element signature="e#35175#35194#0" expanded="true" />
-            <element signature="e#35299#35305#0" expanded="true" />
-            <element signature="e#35480#35499#0" expanded="true" />
-            <element signature="e#35606#35612#0" expanded="true" />
-            <element signature="e#35773#35792#0" expanded="true" />
-            <element signature="e#35894#35900#0" expanded="true" />
-            <element signature="e#36066#36085#0" expanded="true" />
-            <element signature="e#36194#36200#0" expanded="true" />
-            <element signature="e#36369#36388#0" expanded="true" />
-            <element signature="e#36494#36500#0" expanded="true" />
-            <element signature="e#37020#37039#0" expanded="true" />
-            <element signature="e#37270#37289#0" expanded="true" />
-            <element signature="e#37533#37552#0" expanded="true" />
-            <element signature="e#37799#37818#0" expanded="true" />
-            <element signature="e#38065#38084#0" expanded="true" />
-            <element signature="e#38783#38806#0" expanded="true" />
-            <element signature="e#39174#39193#0" expanded="true" />
-            <element signature="e#39304#39310#0" expanded="true" />
-            <element signature="e#39492#39511#0" expanded="true" />
-            <element signature="e#39614#39620#0" expanded="true" />
-            <element signature="e#39798#39817#0" expanded="true" />
-            <element signature="e#39920#39926#0" expanded="true" />
-            <element signature="e#40102#40121#0" expanded="true" />
-            <element signature="e#40224#40230#0" expanded="true" />
-            <element signature="e#40406#40425#0" expanded="true" />
-            <element signature="e#40534#40540#0" expanded="true" />
-            <element signature="e#40712#40731#0" expanded="true" />
-            <element signature="e#40835#40841#0" expanded="true" />
-            <element signature="e#41009#41028#0" expanded="true" />
-            <element signature="e#41146#41152#0" expanded="true" />
-            <element signature="e#41327#41346#0" expanded="true" />
-            <element signature="e#41448#41454#0" expanded="true" />
-            <element signature="e#45438#45459#0" expanded="true" />
-            <element signature="e#45708#45729#0" expanded="true" />
-            <element signature="e#45976#45997#0" expanded="true" />
-            <element signature="e#46245#46266#0" expanded="true" />
-            <element signature="e#49202#49273#0" expanded="true" />
-            <element signature="e#49464#49484#0" expanded="true" />
-            <element signature="e#49705#49725#0" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -683,34 +492,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/购物袋.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -768,24 +553,6 @@
     <entry file="file://$PROJECT_DIR$/static/img/product1_4_b.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/goods.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2773">
-          <caret line="103" column="20" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10609">
-          <caret line="717" column="53" selection-start-line="717" selection-start-column="53" selection-end-line="717" selection-end-column="53" />
-          <folding>
-            <element signature="n#style#0;n#li#2;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django02/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="471">
@@ -793,25 +560,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/json/商品列表.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/img/1.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/json/活动即将开始1.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -848,24 +598,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/魅力惠.js">
+    <entry file="file://$PROJECT_DIR$/App/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="477">
+          <caret line="83" column="11" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index2.html">
+    <entry file="file://$PROJECT_DIR$/App/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="300" column="25" selection-start-line="300" selection-start-column="25" selection-end-line="300" selection-end-column="25" />
+        <state relative-caret-position="176">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/二级页面.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="49" column="22" lean-forward="true" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+        <state relative-caret-position="521">
+          <caret line="102" column="37" lean-forward="true" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/json/商品详情.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/json/商品列表.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="300" column="25" selection-start-line="300" selection-start-column="25" selection-end-line="300" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/商品详情.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="87" column="54" selection-start-line="87" selection-start-column="54" selection-end-line="87" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/goods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="224" column="40" lean-forward="true" selection-start-line="224" selection-start-column="40" selection-end-line="224" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/no_shopping.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/reduce.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/reduce_none.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="314" column="35" selection-start-line="314" selection-start-column="32" selection-end-line="314" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/test1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="779" column="46" lean-forward="true" selection-start-line="779" selection-start-column="46" selection-end-line="779" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/购物袋.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="144" column="51" lean-forward="true" selection-start-line="144" selection-start-column="51" selection-end-line="144" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/goods2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/goods1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="288" column="36" lean-forward="true" selection-start-line="288" selection-start-column="36" selection-end-line="288" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#li#2;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/魅力惠.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-154">
+          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="37" />
         </state>
       </provider>
     </entry>

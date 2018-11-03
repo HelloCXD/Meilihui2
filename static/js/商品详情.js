@@ -57,8 +57,9 @@ $(function(){
 	})
 	//cookie,同步商品信息
 	var product = $.cookie("products");
+	console.log(product)
 	if(product){product = JSON.parse(product)};
-	$.get("json/商品详情.json",function(data){
+	$.get("/static/json/商品详情.json",function(data){
 		for(var i = 0;i < data.length;i++){
 			var obj = data[i];
 			if(obj.id == product[0].id){

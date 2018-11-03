@@ -81,6 +81,7 @@ def quit(request):
 
 # 商品列表
 def goods(request):
+    print(1)
     print(request.method)
     return render(request, 'goods.html')
 
