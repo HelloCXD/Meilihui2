@@ -12,7 +12,7 @@ $(function(){
 		})
 
 	}
-	//今日新上轮播图
+	//今日新上轮播图（方式一）
 	// $(".goods_lun a").first().clone().appendTo(".goods_lun");
 	// var size = $(".goods_lun a").length;
 	// var i = 0;
@@ -27,6 +27,26 @@ $(function(){
 	// 	}
 	// 	$(".goods_lun").stop().animate({left: -i*320},1000)
 	// }
+	//今日新上轮播图（方式２）
+	new Swiper('#topSwiper', {
+        pagination: '.swiper-pagination',
+        // nextButton: '.swiper-button-next',
+        // prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 5,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false,
+        loop: true
+    });
+
+
+     new Swiper('#mustbuySwiper', {
+        slidesPerView: 3,
+        spaceBetween: 10,
+         loop: true
+    });
+
 	//活动即将开始，json传值
 	function brands(data){
 		for(var i = 0;i < data.length;i++){

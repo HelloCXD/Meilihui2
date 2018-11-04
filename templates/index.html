@@ -282,16 +282,36 @@
 							</a>
 						</div>
 						<div class="goods_big">
-							<div class="goods_lun">
-								<a href="#">
-									<img src="{% static 'img/goods_big1.jpg' %}">
-								</a>
-								<a href="#">
-									<img src="{% static 'img/goods_big2.jpg' %}">
-								</a>
-							<a href="#">
-									<img src="{% static 'img/goods_big1.jpg' %}">
-								</a></div>
+							<!--<div class="goods_lun">-->
+								<!--{#    轮播图方式一#}-->
+								<!--<a href="#">-->
+									<!--<img src="{% static 'img/goods_big1.jpg' %}">-->
+								<!--</a>-->
+								<!--<a href="#">-->
+									<!--<img src="{% static 'img/goods_big2.jpg' %}">-->
+								<!--</a>-->
+								<!--<a href="#">-->
+									<!--<img src="{% static 'img/goods_big1.jpg' %}">-->
+								<!--</a>-->
+
+
+								<!--{#    轮播图方式二#}-->
+								<div class="swiper-container" id="topSwiper">
+									<div class="swiper-wrapper">
+										{% for wheel in wheels %}
+										<div class="swiper-slide">
+											<img src="{{ wheel.img }}" alt="">
+										</div>
+										{% endfor %}
+									</div>
+									 Add Pagination
+									<!--<div class="swiper-pagination"></div>-->
+									 Add Arrows
+
+									<!--<div class="swiper-button-next"></div>-->
+									<!--<div class="swiper-button-prev"></div>-->
+								</div>
+							<!--</div>-->
 						</div>
 						<div class="goods">
 							<a href="#">
@@ -1068,7 +1088,7 @@
 					</div>
 				</div>
 			</div>
-
+		</div>
 		<div class="footer">
 			<div class="footer_center">
 				<ul class="footer_ul1">

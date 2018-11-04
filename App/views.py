@@ -2,18 +2,22 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
 # Create your views here.
-from App.models import User
+from App.models import User, Wheel
+
 
 # 首页１
 def index(request):
     tel = request.COOKIES.get('tel')
     users = User.objects.filter(tel=tel)
+    wheels = Wheel.objects.all()
+    print(wheels)
+
     if users.exists():
         user = users.first()
-        return render(request, 'index.html', context={'tel': user.tel})
+        return render(request, 'index.html', context={'tel': user.tel, 'wheels': wheels})
 
     else:
-        return render(request, 'index.html')
+        return render(request, 'index.html', context={'wheels': wheels})
 
 
 

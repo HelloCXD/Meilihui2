@@ -234,3 +234,28 @@ body{font-size: 12px;
 	width: 98px;
 	height: 24px;
 	cursor: pointer;}
+
+
+/* 今日上线轮播图部分*/
+#topSwiper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#topSwiper .swiper-wrapper{
+    width: 100%;
+    height: 100%;
+}
+#topSwiper .swiper-wrapper a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+#topSwiper img{
+    width: 100%;
+    height: 100%;
+}
+#topSwiper .swiper-pagination{
+    bottom: 0px;
+}
