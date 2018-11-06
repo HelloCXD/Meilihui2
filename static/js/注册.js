@@ -2,29 +2,43 @@ $(function(){
 	//账户名
 	$("#user").on("focus",function(){
 		$(this).on("blur",function(){
+
 			//验证是否为空，电话和邮箱，或都不是
-			var reg_user_phone = /^1[3578]\d{9}$/;
-			var reg_user_email = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9_\.\-]+\.[a-zA-Z]+$/;
+			var reg_user_phone = /^1[3|5|7|8]\d{9}$/;
+			// var reg_user_email = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9_\.\-]+\.[a-zA-Z]+$/;
 			if($(this).val() == ""){
 				$("#entry_user").show();
 				$("#entry_user_true").hide();
+				$("#entry_user2").hide();
+				// $(".code2").hide();
+				// $(".phone_code").hide();
 			}else if(reg_user_phone.test($(this).val())){
-				$("#entry_user").hide();
-				$("#entry_user_true").hide();
-				$(".code2").show();
-				$(".phone_code").show();
-			}else if(reg_user_email.test($(this).val())){
-				$("#entry_user").hide();
-				$("#entry_user_true").hide();
-				$(".code2").hide();
-				$(".phone_code").hide();
+				$.get('/checktel/', {'tel':$(this).val()}, function (response) {
+                    console.log(response)
+					if (response.status == -1){ // 不可用
+						$("#entry_user").hide();
+                    	$("#entry_user_true").hide();
+                    	$("#entry_user2").show();
+					}
+				})
 			}
+			// else if(reg_user_email.test($(this).val())){
+			// 	$("#entry_user").hide();
+			// 	$("#entry_user_true").hide();
+			// 	$(".code2").hide();
+			// 	$(".phone_code").hide();
+			// }
 			else{
 				$("#entry_user").hide();
 				$("#entry_user_true").show();
+				$("#entry_user2").hide();
 			}
 		})
 	})
+
+
+
+
 	//密码
 	var down1 = /^[0-9]{6,20}$/;
 	var down2 = /^[a-z]{6,20}$/;
@@ -103,7 +117,7 @@ $(function(){
 		}
 	})
 	$.idcode.setCode();
-	//点击立即注册，注册账号
+	// 点击立即注册，注册账号
 	// $("#register").on("click",function(){
 	// 	//注册(cookie存储)
 	// 	var users = $.cookie("users") ? JSON.parse($.cookie("users")) : [];
@@ -124,7 +138,7 @@ $(function(){
 	// 	window.open("login.html");
 	// 	console.log( $.cookie("users") );
 	// })
-	//会员登录
+	// 会员登录
 	// $("#login").click(function(){
 	// 	var users = $.cookie("users");
 	// 	console.log(users);

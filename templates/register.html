@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="../static/css/jquery.idcode.css" />
 		<script type="text/javascript" src="../static/js/jquery-1.12.3.js" ></script>
 		<script type="text/javascript" src="../static/js/jquery.cookie.js" ></script>
-		<script type="text/javascript" src="../static/js/注册-登录页面.js" ></script>
+		<script type="text/javascript" src="../static/js/注册.js" ></script>
 		<script type="text/javascript" src="../static/js/jquery.idcode.js" ></script>
 
 	</head>
@@ -30,9 +30,10 @@
 						<div class="userinfo">
 							<form action="/register/" method="post">
 								{% csrf_token %}
-								<span>账户名:</span><input type="text" placeholder="手机号/邮箱" id="user" name="tel"/>
-								<p class="remind" id="entry_user">请输入手机号或邮箱</p>
-								<p class="remind" id="entry_user_true">请输入正确的手机号或邮箱</p>
+								<span>账户名:</span><input type="text" placeholder="手机号" id="user" name="tel"/>
+								<p class="remind" id="entry_user">请输入手机号</p>
+								<p class="remind" id="entry_user2">电话号码已被注册，请重新输入</p>
+								<p class="remind" id="entry_user_true">请输入正确的手机号</p>
 								<span>密码:</span><input type="password" placeholder="请输入6-20个字符" id="password"
 													   maxlength="20" name="password"/>
 								<p class="remind" id="entry_password">请输入密码</p>

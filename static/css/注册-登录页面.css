@@ -86,6 +86,14 @@ body{background: #dddddb;}
 .userinfo p a{color: black;}
 .userinfo p a:hover{color: #db2725;}
 /*登录页面:忘记密码*/
+
+
+#err{
+	color: red;
+	font-size: 20px;
+
+}
+
 .userinfo p .forget{float: right;}
 /*复选框*/
 .userinfo .checkbox1{width: 12px;
@@ -172,3 +180,5 @@ body{background: #dddddb;}
 .footer_center p{text-align: center;
 	margin-bottom: 20px;}
 .footer_center p span{margin-right: 30px;}
+
+

@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="../static/css/jquery.idcode.css" />
 		<script type="text/javascript" src="../static/js/jquery-1.12.3.js" ></script>
 		<script type="text/javascript" src="../static/js/jquery.cookie.js" ></script>
-		<script type="text/javascript" src="../static/js/注册-登录页面.js" ></script>
+		<script type="text/javascript" src="../static/js/登录.js" ></script>
 		<script type="text/javascript" src="../static/js/jquery.idcode.js" ></script>
 	</head>
 	<body>
@@ -28,9 +28,9 @@
 						<div class="userinfo">
 							<form action="/login/" method="post">
 								{% csrf_token %}
-								<span>账户名:</span><input type="text" placeholder="已验证手机号/邮箱" id="user" name="tel"/>
-								<p class="remind" id="entry_user">请输入已验证的手机号或邮箱</p>
-								<p class="remind" id="entry_user_true">请输入正确的手机号或邮箱</p>
+								<span>账户名:</span><input type="text" placeholder="已注册手机号" id="user" name="tel"/>
+								<p class="remind" id="entry_user">请输入已注册的手机号</p>
+								<p class="remind" id="entry_user_true">请输入正确的手机号</p>
 								<span>密码:</span><input type="password" id="password" maxlength="20" name="password"/>
 								<span>验证码:</span><input type="text" class="code txtVerification" id="Txtidcode"/>
 								<span id="idcode"></span>
@@ -38,6 +38,11 @@
 								<p class="remind" id="entry_code_true">请输入正确验证码</p>
 								<p class="remind" id="wrong">账号或密码错误</p>
 								<input type="submit" value="会员登录" class="submit" id="login"/>
+								<div>
+									{% if error %}
+            							<p id="err">{{ error }}</p>
+        							{% endif %}
+								</div>
 								<p><span class="checkbox1" id="checkbox"></span>下次自动登录<a href="#"
 																						 class="forget">忘记密码</a></p>
 								<span>联名登录:</span><a href="#" class="weibo"></a><a href="#" class="zhifubao"></a>
