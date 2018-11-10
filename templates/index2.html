@@ -10,7 +10,7 @@
 		<script type="text/javascript" src="{% static 'js/jquery-1.12.3.js' %}" ></script>
 		<script type="text/javascript" src="{% static 'js/jquery.cookie.js' %}" ></script>
 		<script type="text/javascript" src="{% static 'js/header-footer.js' %}" ></script>
-		<!--<script type="text/javascript" src="{% static 'js/二级页面.js' %}" ></script>-->
+		<script type="text/javascript" src="{% static 'js/二级页面.js' %}" ></script>
 
 	</head>
 	<body>
@@ -305,30 +305,33 @@
                 <!--商品列表-->
 
 
-				<div class="product">
-					{% for goods in goodslist %}
-						<div class="product_img">
-							<a href="#">
-								<div class="product_label">{{ goods.buyer }}</div>
-								<img src="{{ goods.src1 }}" title="{{ goods.title }}" class="img_first"/>
-								<img src="{{ goods.src2 }}" title="{{ goods.title }}" />
-								<img src="{{ goods.src3 }}" title="{{ goods.title }}" />
-							</a>
-						</div>
-						<div class="product_content">
-							<p><a href="{% url 'App:goods' %}">{{ goods.name }}</a></p>
-							<p><a href="{% url 'App:goods' %}">{{ goods.title }}</a></p>
-							<p><span>{{ goods.price }} </span><span>{{ goods.original_price }}</span></p>
-						</div>
-						<div class="product_pic">
-							<ul>
-								<li><img src="{{ goods.index1 }}"></li>
-								<li><img src="{{ goods.index2 }}"></li>
-								<li><img src="{{ goods.index3 }}"></li>
-							</ul>
+
+					{% for good in goods %}
+
+						<div class="product">
+							<div class="product_img" >
+								<a href="{% url 'App:goods' good.goodsid %}">
+									<div class="product_label">{{ good.buyer }}</div>
+									<img src="{{ good.src1 }}" title="{{ good.title }}" class="img_first"/>
+									<img src="{{ good.src2 }}" title="{{ good.title }}" />
+									<img src="{{ good.src3 }}" title="{{ good.title }}" />
+								</a>
+							</div>
+							<div class="product_content">
+								<p><a href="{% url 'App:goods' good.goodsid %}">{{ good.name }}</a></p>
+								<p><a href="{% url 'App:goods' good.goodsid %}">{{ good.title }}</a></p>
+								<p><span>{{ good.price }} </span><span>{{ good.original_price }}</span></p>
+							</div>
+							<div class="product_pic">
+								<ul>
+									<li><img src="{{ good.index1 }}"></li>
+									<li><img src="{{ good.index2 }}"></li>
+									<li><img src="{{ good.index3 }}"></li>
+								</ul>
+							</div>
 						</div>
 					{% endfor %}
-				</div>
+
 
 
                 <!--商品列表-->

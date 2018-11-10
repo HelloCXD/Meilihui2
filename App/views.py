@@ -2,7 +2,7 @@ from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 
 # Create your views here.
-from App.models import User, Wheel, Goodslist
+from App.models import User, Wheel, Goodsdetail, Cart
 
 
 # 首页１
@@ -27,15 +27,16 @@ def index(request):
 def index2(request):
     tel = request.COOKIES.get('tel')
     users = User.objects.filter(tel=tel)
-    goods = Goodslist.objects.all()
-    print(goods)
+    goods = Goodsdetail.objects.all()
+
+    # print(goods)
     if users.exists():
         user = users.first()
-        print(1)
-        return render(request, 'index2.html', context={'tel': user.tel, 'goods':goods})
+        # print(1)
+        return render(request, 'index2.html', context={'tel': user.tel, 'goods':goods,})
 
     else:
-        print(2)
+        # print(2)
         return render(request, 'index2.html', context={'goods':goods})
 
 
@@ -93,26 +94,55 @@ def quit(request):
     return response
 
 # 商品列表
-def goods(request):
-    print(1)
-    print(request.method)
-    return render(request, 'goods.html')
+def goods(request, goodsid):
+    goods = Goodsdetail.objects.get(goodsid=goodsid)
+    goodsid =goods.goodsid
+    tel = request.COOKIES.get('tel')
+
+
+
+    # print(goodsid)
+    # print(goods)
+    # print(tel)
+    if tel:
+        user = User.objects.get(tel=tel)
+        # print(tel)
+        carts = Cart.objects.filter(user=user).filter(goods=goods)
+        # print(carts)
+        cart = carts.first()
+        if cart:
+
+            print(2)
+            data = {
+                'tel': tel,
+                'number': cart.number,
+                'goods': goods
+            }
+
+            return render(request, 'goods.html', context=data)
+        else:
+            return render(request, 'goods.html', context={'goods': goods, 'tel':tel})
+    else:
+        return render(request, 'goods.html', context={'goods': goods})
+
 
 # 购物车
 def cart(request):
     tel = request.COOKIES.get('tel')
-    users = User.objects.filter(tel=tel)
-    if users.exists():
-        user = users.first()
-        return render(request, 'cart.html', context={'tel': user.tel})
+    user = User.objects.get(tel=tel)
+    carts = Cart.objects.filter(user=user)
+    print(tel)
+    print(user)
+    print(carts)
 
-    else:
-        return render(request, 'cart.html')
+    return render(request, 'cart.html', context={'tel': user.tel, 'carts': carts})
+
+
 
 
 def checkin(request):
     tel= request.GET.get('tel')
-    print(tel)
+    # print(tel)
     responseData = {
         'msg': '电话可用',
         'status': 1
@@ -120,7 +150,7 @@ def checkin(request):
 
     tels = User.objects.filter(tel=tel)
     if tels:
-        print(tels)
+        # print(tels)
         responseData['msg'] = '电话已被注册'
         responseData['status'] = -1
         return JsonResponse(responseData)
@@ -129,8 +159,99 @@ def checkin(request):
         return JsonResponse(responseData)
 
 
-# def checkon(request):
-#     tel=request.GET.get('tel')
-#     print(tel)
-#     tels = User.objects.filter(tel=tel)
-#     return JsonResponse({'msg': '电话可用'})
+def addcart(request):
+    goodsid = request.GET.get('goodsid')
+    # print(goodsid)
+    tel = request.COOKIES.get('tel')
+
+    responseData={
+        'msg':'添加购物车成功',
+        'status': 1
+    }
+
+    if tel:
+        # 获取用户信息
+        user = User.objects.get(tel=tel)
+        # 获取商品信息
+        goods = Goodsdetail.objects.get(goodsid=goodsid)
+
+        # 商品已经在购物车，只修改商品个数
+        # 商品不存在购物车，新建对象（加入一条新的数据）
+        carts = Cart.objects.filter(user=user).filter(goods=goods)
+        print(carts)
+        if carts.exists(): #　修改数量
+            cart = carts.first()
+            cart.number = cart.number + 1
+            cart.save()
+            responseData['number'] = cart.number
+        else: # 添加一条新购物车记录
+            cart=Cart()
+            cart.user= user
+            cart.goods = goods
+            cart.number = 1
+            cart.save()
+
+            responseData['number'] = cart.number
+        return JsonResponse(responseData)
+    else: # 未登录
+        responseData['msg'] = '未登录，请登录后操作'
+        responseData['status'] = -1
+        return JsonResponse(responseData)
+
+
+def subcart(request):
+    goodsid = request.GET.get('goodsid')
+    # print(goodsid)
+    user= request.COOKIES.get('tel')
+
+    tel = User.objects.get(tel=user)
+    goods= Goodsdetail.objects.get(goodsid=goodsid)
+
+
+    cart = Cart.objects.filter(user=tel).filter(goods=goods).first()
+    cart.number = cart.number -1
+    cart.save()
+
+    responseData={
+        'msg': '购物车减操作成功',
+        'status': 1,
+        'number': cart.number
+    }
+
+
+
+    return JsonResponse(responseData)
+
+
+def changecartstatus(request):
+    cartid = request.GET.get('cartid')
+    print(cartid)
+    cart = Cart.objects.get(pk=cartid)
+    cart.isselect = not cart.isselect
+    cart.save()
+
+    responseData={
+        'msg': '选中状态改变',
+        'status': 1,
+        'isselect': cart.isselect
+    }
+    return JsonResponse(responseData)
+
+
+def changecartselect(request):
+    isselect = request.GET.get('isselect')
+    print(isselect)
+    if isselect == 'true':
+        isselect =True
+    else:
+        isselect = False
+
+    tel = request.COOKIES.get('tel')
+    user = User.objects.get(tel=tel)
+    carts = Cart.objects.filter(user=user)
+    for cart in carts:
+        cart.isselect = isselect
+        cart.save()
+
+
+    return JsonResponse({'msg': '选中状态修改成功', 'status':1})

@@ -42,7 +42,7 @@
 /*购物袋中有商品的情况下*/
 .shoppingList{width: 1000px;
 	height: auto;
-	display: none;}
+	display: block;}
 .shoppingList_header{width: 1000px;
 	height: 25px;
 	overflow: hidden;
@@ -136,6 +136,38 @@
 	top: 47px;
 	left: 55px;
 	cursor: pointer;}
+.shoppingList .confirm-wrapper{
+    width: 10%;
+    line-height: 6rem;
+    text-align: center;
+    position: relative;
+}
+
+.shoppingList .no{
+    position: absolute;
+    /*float: left;*/
+    display: block;
+    top: 34px;
+    left: 47px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+.shoppingList .glyphicon-ok{
+    position: absolute;
+    /*float: left;*/
+    background: #ffd601;
+    color: white;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2.5rem;
+    top: 34px;
+    left: 47px;
+}
+
+
 /*全场免运*/
 .story{width: 1000px;
 	height: auto;
@@ -157,6 +189,73 @@
 .brand_story p span{color: black;}
 .brand_story p span:hover{color: #db2726;}
 /*结算*/
+
+
+.pay .allno{
+    /*position: absolute;*/
+    float: right;
+    display: block;
+    /*top: 34px;*/
+    /*left: 47px;*/
+    margin-right: 50px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+
+
+.pay .allok{
+    /*position: absolute;*/
+    float: right;
+    background: #ffd601;
+    color: white;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2.5rem;
+    margin-right: 50px;
+    /*top: 34px;*/
+    /*left: 47px;*/
+}
+
+.pay .all{
+    padding-right: 23px;
+    color: black;
+}
+
+/*.pay .all{*/
+    /*width: 470px;*/
+    /*float: right;*/
+    /*text-align: right;*/
+    /*font-size: 18px;*/
+    /*position: relative;*/
+    /*margin-bottom: 20px;;*/
+/*}*/
+/*.pay .all span{*/
+    /*vertical-align: middle;*/
+/*}*/
+
+/*#no{*/
+    /*!*position: absolute;*!*/
+    /*!*float: left;*!*/
+    /*display: block;*/
+    /*top: 34px;*/
+    /*left: 47px;*/
+    /*width: 2.5rem;*/
+    /*height: 2.5rem;*/
+    /*border-radius: 50%;*/
+    /*border: 1px solid grey;*/
+
+/*}*/
+/*.pay .all b{*/
+    /*vertical-align: middle;*/
+    /*font-weight: normal;*/
+    /*!*padding-right: 110px;*!*/
+    /*font-size: 20px;*/
+    /*margin-right: 100px;*/
+/*}*/
+
 .pay{width: 100%;
 	height: auto;
 	padding: 60px 0 30px 0;
@@ -174,7 +273,8 @@
 	cursor: pointer;}
 .end{width: 470px;
 	float: right;}
-.money{width: 470px;
+.money{
+    width: 470px;
     float: right;
     text-align: right;
     font-size: 18px;
@@ -206,3 +306,5 @@
 	cursor: pointer;
 	background-color: #db2726;
 	float: right;}
+
+

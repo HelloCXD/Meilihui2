@@ -36,77 +36,130 @@ $(function(){
 		$(".small_area").hide();
 		$(".big_area").hide();
 	})
-	//右侧商品数量加减
-	var count = 1;
-	$(".add").on("click",function(){
-		count++;
-		$(".number").html(count);
-		if($(".number").html() != 1){
-			$(".reduce").css("color","black");
-		}
-	})
-	
-	$(".reduce").on("click",function(){
-		if($(".number").html() > 1){
-			count--;
-			$(".number").html(count);
-		}else{
-			$(".reduce").css("color","#ccc");
-			$(".number").html() = 1;
-		}
-	})
+	//右侧商品数量加操作
+    // 方式一：
+    $('.add').on('click', function () {
+        // 商品ＩＤ
+        var goodsid = $(this).attr('goodsid')
+        var $that = $(this)
+
+        $.get('/addcart/', {'goodsid':goodsid}, function (response) {
+            console.log(response)
+            if (response.status == -1){ //未登录
+                window.open('/login/', target='_self')
+
+
+            } else if (response.status == 1){// 添加成功
+                $that.prev().show().html(response.number)
+                $that.prev().prev().show()
+
+            }
+        })
+    })
+    
+    //右侧商品数量减操作
+    $('.reduce').on('click', function () {
+        //商品ＩＤ
+        var goodsid = $(this).attr('goodsid')
+        var $that = $(this)
+
+        $.get('/subcart/', {'goodsid': goodsid}, function (response) {
+            console.log(response)
+            if(response.status == 1){// 减操作成功
+                var number = response.number
+                if (number > 0){
+                    $that.next().html(number)
+                } else {
+                    $that.next().hide()
+                    $that.hide()
+
+                }
+
+            }
+        })
+    })
+    
+    
+    
+    
+    
+    // 方式二：
+	// var count = 1;
+	// $(".add").on("click",function(){
+	// 	count++;
+	// 	$(".number").html(count);
+	// 	if($(".number").html() != 1){
+	// 		$(".reduce").css("color","black");
+	// 	}
+	// })
+	//
+	// $(".reduce").on("click",function(){
+	// 	if($(".number").html() > 1){
+	// 		count--;
+	// 		$(".number").html(count);
+	// 	}else{
+	// 		$(".reduce").css("color","#ccc");
+	// 		$(".number").html() = 1;
+	// 	}
+	// })
 	//cookie,同步商品信息
-	var product = $.cookie("products");
-	console.log(product)
-	if(product){product = JSON.parse(product)};
-	$.get("/static/json/商品详情.json",function(data){
-		for(var i = 0;i < data.length;i++){
-			var obj = data[i];
-			if(obj.id == product[0].id){
-				$(".content_header").find("li").eq(2).find("a").text(obj.name);
-				$(".content_header").find("li").eq(3).text(obj.title);
-				$(".img").eq(0).attr({"src":obj.src1,"title":obj.title});
-				$(".img").eq(1).attr({"src":obj.src2,"title":obj.title});
-				$(".img").eq(2).attr({"src":obj.src3,"title":obj.title});
-				$(".img").eq(3).attr({"src":obj.src4,"title":obj.title});
-				$(".big_img").eq(0).attr({"src":obj.src1});
-				$(".big_img").eq(1).attr({"src":obj.src2});
-				$(".big_img").eq(2).attr({"src":obj.src3});
-				$(".big_img").eq(3).attr({"src":obj.src4});
-				$(".pic").find("img").eq(0).attr({"src":obj.index1,"title":obj.title});
-				$(".pic").find("img").eq(1).attr({"src":obj.index2,"title":obj.title});
-				$(".pic").find("img").eq(2).attr({"src":obj.index3,"title":obj.title});
-				$(".pic").find("img").eq(3).attr({"src":obj.index4,"title":obj.title});
-				$(".goods_right").find("h3").html(obj.title);
-				$(".price").text(obj.price);
-				$(".original_price").html(obj.original_price);
-				$(".smallImg").attr("src",obj.index1);
-				$(".btn").attr("id",obj.id);
-				//商品加入购物袋
-				$(".btn").on("click",function(evt){
-					evt.preventDefault();
-					var products1 = $.cookie("goods") ? JSON.parse($.cookie("goods")) : [];
-					var isExists = false;
-					for (var i = 0; i < products1.length; i++) {
-						if ($(".btn").attr("id") == products1[i].id) {
-							products1[i].num++;
-							isExists = true;
-						}
-					}
-					if (!isExists) {
-						var product1 = {
-							id: $(".btn").attr("id"),
-							num: $(".number").html()
-						}
-						products1.push(product1);
-					}
-					var sum = $(".sum").html()*1;
-					var number = $(".number").html()*1;
-					$(".sum").html(number + sum);
-					$.cookie("goods", JSON.stringify(products1), {expires:100, path:"/"});
-				})
-			}
-		}
-	})
+	// var product = $.cookie("products");
+	// console.log(product)
+	// if(product){product = JSON.parse(product)};
+
+
+
+
+
+
+	// $.get("/static/json/商品详情.json",function(data){
+	// 	for(var i = 0;i < data.length;i++){
+	// 		var obj = data[i];
+	// 		if(obj.id == product[0].id){
+	// 			$(".content_header").find("li").eq(2).find("a").text(obj.name);
+	// 			$(".content_header").find("li").eq(3).text(obj.title);
+	// 			$(".img").eq(0).attr({"src":obj.src1,"title":obj.title});
+	// 			$(".img").eq(1).attr({"src":obj.src2,"title":obj.title});
+	// 			$(".img").eq(2).attr({"src":obj.src3,"title":obj.title});
+	// 			$(".img").eq(3).attr({"src":obj.src4,"title":obj.title});
+	// 			$(".big_img").eq(0).attr({"src":obj.src1});
+	// 			$(".big_img").eq(1).attr({"src":obj.src2});
+	// 			$(".big_img").eq(2).attr({"src":obj.src3});
+	// 			$(".big_img").eq(3).attr({"src":obj.src4});
+	// 			$(".pic").find("img").eq(0).attr({"src":obj.index1,"title":obj.title});
+	// 			$(".pic").find("img").eq(1).attr({"src":obj.index2,"title":obj.title});
+	// 			$(".pic").find("img").eq(2).attr({"src":obj.index3,"title":obj.title});
+	// 			$(".pic").find("img").eq(3).attr({"src":obj.index4,"title":obj.title});
+	// 			$(".goods_right").find("h3").html(obj.title);
+	// 			$(".price").text(obj.price);
+	// 			$(".original_price").html(obj.original_price);
+	// 			$(".smallImg").attr("src",obj.index1);
+	// 			$(".btn").attr("id",obj.id);
+	// 			//商品加入购物袋
+	// 			$(".btn").on("click",function(evt){
+	// 				evt.preventDefault();
+	// 				var products1 = $.cookie("goods") ? JSON.parse($.cookie("goods")) : [];
+	// 				var isExists = false;
+	// 				for (var i = 0; i < products1.length; i++) {
+	// 					if ($(".btn").attr("id") == products1[i].id) {
+	// 						products1[i].num++;
+	// 						isExists = true;
+	// 					}
+	// 				}
+	// 				if (!isExists) {
+	// 					var product1 = {
+	// 						id: $(".btn").attr("id"),
+	// 						num: $(".number").html()
+	// 					}
+	// 					products1.push(product1);
+	// 				}
+	// 				var sum = $(".sum").html()*1;
+	// 				var number = $(".number").html()*1;
+	// 				$(".sum").html(number + sum);
+	// 				$.cookie("goods", JSON.stringify(products1), {expires:100, path:"/"});
+	// 			})
+	// 		}
+	// 	}
+	// })
 	
 })

@@ -13,7 +13,7 @@ $(function(){
 				// $(".code2").hide();
 				// $(".phone_code").hide();
 			}else if(reg_user_phone.test($(this).val())){
-				$.get('/checktel/', {'tel':$(this).val()}, function (response) {
+				$.get('/checkin/', {'tel':$(this).val()}, function (response) {
                     console.log(response)
 					if (response.status == -1){ // 不可用
 						$("#entry_user").hide();
