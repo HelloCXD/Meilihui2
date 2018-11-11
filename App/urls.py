@@ -18,4 +18,7 @@ urlpatterns = [
     url(r'^changecartstatus/$', views.changecartstatus, name='changecartstatus'),  # 修改选中状态
     url(r'changecartselect/$', views.changecartselect, name='changecartselect'),  # 全选/取消全选
 
+    url(r'^generateorder/$', views.generateorder, name='generateorder'),  # 下单
+    url(r'^orderinfo/(\d+)/$', views.orderinfo, name='orderinfo'),
+
 ]

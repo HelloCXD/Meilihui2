@@ -105,27 +105,29 @@
 .list_news .brand a:hover,.list_news .goods a:hover{color: #db2726;}
 .list_news .goods{margin-bottom: 8px;}
 .list_content .number{margin: 0 auto;
-	margin-top: 38px;width: 108px;
+	margin-top: 38px;
+    width: 108px;
 	height: 28px;
-	border: 1px solid #999;
+	/*border: 1px solid #999;*/
 	overflow: hidden;}
-.list_content .number .reduce{width: 28px;
-	height: 28px;
-	border-right: 1px solid #999;
-	background: url(../img/reduce_none.gif) no-repeat;
-	cursor: pointer;
-	display: inline-block;
-	float: left;}
-.list_content .number .add{width: 28px;
-	height: 28px;
-	border-left: 1px solid #999;
-	background: url(../img/increase.gif) no-repeat;
-	cursor: pointer;
-	display: inline-block;
-	float: left;}
+/*.list_content .number .reduce{width: 28px;*/
+	/*height: 28px;*/
+	/*border-right: 1px solid #999;*/
+	/*background: url(../img/reduce_none.gif) no-repeat;*/
+	/*cursor: pointer;*/
+	/*display: inline-block;*/
+	/*float: left;}*/
+/*.list_content .number .add{width: 28px;*/
+	/*height: 28px;*/
+	/*border-left: 1px solid #999;*/
+	/*background: url(../img/increase.gif) no-repeat;*/
+	/*cursor: pointer;*/
+	/*display: inline-block;*/
+	/*float: left;}*/
 .list_content .number .num{width: 50px;
 	height: 18px;
-	padding: 5px 0;
+	padding-top: 5px;
+    padding-left: 50px;
 	display: inline-block;
 	float: left;
 	line-height: 18px;

@@ -87,8 +87,21 @@ $(function(){
         //显示
 
         console.log('总数'+sum)
-        $('.pay .allMoney b').html(sum)
+        $('.pay .allMoney b').html(parseInt(sum))
     }
+
+
+    //下单
+
+    $('#generateorder').click(function () {
+        $.get('/generateorder/', function (response) {
+            console.log(response)
+            if (response.status == 1){  // 跳转到订单详情
+                window.open('/orderinfo/'+response.identifier +
+                '/', target='_self')
+            }
+        })
+    })
 
 	//商品信息传入
 

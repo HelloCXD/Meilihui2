@@ -28,14 +28,14 @@
 						<div class="userinfo">
 							<form action="/login/" method="post">
 								{% csrf_token %}
-								<span>账户名:</span><input type="text" placeholder="已注册手机号" id="user" name="tel"/>
+								<span>账户名:</span><input type="text" placeholder="请输入已注册的手机号" id="user" name="tel"/>
 								<p class="remind" id="entry_user">请输入已注册的手机号</p>
 								<p class="remind" id="entry_user_true">请输入正确的手机号</p>
 								<span>密码:</span><input type="password" id="password" maxlength="20" name="password"/>
-								<span>验证码:</span><input type="text" class="code txtVerification" id="Txtidcode"/>
-								<span id="idcode"></span>
-								<p class="remind" id="entry_code">请输入验证码</p>
-								<p class="remind" id="entry_code_true">请输入正确验证码</p>
+								<!--<span>验证码:</span><input type="text" class="code txtVerification" id="Txtidcode"/>-->
+								<!--<span id="idcode"></span>-->
+								<!--<p class="remind" id="entry_code">请输入验证码</p>-->
+								<!--<p class="remind" id="entry_code_true">请输入正确验证码</p>-->
 								<p class="remind" id="wrong">账号或密码错误</p>
 								<input type="submit" value="会员登录" class="submit" id="login"/>
 								<div>

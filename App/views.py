@@ -1,8 +1,11 @@
+import random
+import time
+
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 
 # Create your views here.
-from App.models import User, Wheel, Goodsdetail, Cart
+from App.models import User, Wheel, Goodsdetail, Cart, Order, OrderGoods
 
 
 # 首页１
@@ -255,3 +258,38 @@ def changecartselect(request):
 
 
     return JsonResponse({'msg': '选中状态修改成功', 'status':1})
+
+
+def generateorder(request):
+    tel= request.COOKIES.get('tel')
+    user = User.objects.get(tel=tel)
+
+    # 生成订单
+    order = Order()
+    order.user = user
+    order.identifier = str(int(time.time())) + str(random.randrange(10000,100000))
+    order.save()
+
+    # 订单商品
+    carts = Cart.objects.filter(user=user).filter(isselect=True)
+    for cart in carts:
+        orderGoods = OrderGoods()
+        orderGoods.order = order
+        orderGoods.goods = cart.goods
+        orderGoods.number = cart.number
+        orderGoods.save()
+
+        cart.delete()
+
+    responseData = {
+        'msg': '订单生成成功',
+        'status': 1,
+        'identifier': order.identifier
+    }
+
+    return JsonResponse(responseData)
+
+
+def orderinfo(request, identifier):
+    order = Order.objects.get(identifier=identifier)
+    return render(request, 'orderinfo.html', context={'order': order})
