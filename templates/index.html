@@ -32,8 +32,8 @@
 						<li>|</li>
 						<li><a href="/quit/" target="_blank"> 退出 </a></li>
 						<li>|</li>
-                        <li><a href="/cart/" target="_blank"> 订单管理 </a></li>
-						<li>|</li>
+                        <li><a href="/cart/" target="_blank"> 购物车 </a></li>
+
 					{% else %}
 						<li>
 							<img src="{% static 'img/zhuceyouli.gif' %}">
@@ -41,10 +41,10 @@
 						</li>
 						<li>|</li>
 						<li><a href="{% url 'App:login' %}" target="_blank">登录</a></li>
-						<li>|</li>
+
 					{% endif %}
 
-					<li><a href="{% url 'App:login' %}" target="_blank">收藏</a></li>
+
 				</ul>
 				<ul class="header_right">
 					<li><a href="#">在线咨询</a></li>
